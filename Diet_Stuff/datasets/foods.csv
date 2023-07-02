@@ -90,3 +90,7 @@ id,meal_id,food_name,servings,carbs,fats,proteins,calories
 89,33,Ramen,1.0,54,14,8,370
 90,33,Protein Powder,2.0,3,2,24,120
 91,34,Gordita Crunch,2.0,41,28,20,490
+92,35,Gordita Crunch,1.0,41,28,20,490
+93,35,Fruit Snacks,1.0,17,0,1,70
+94,36,Protein Powder,2.0,3,2,24,120
+95,36,Fruit Snacks,1.0,17,0,1,70
