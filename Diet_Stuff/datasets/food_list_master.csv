@@ -1,0 +1,63 @@
+id,food_name,carbs,fats,proteins,calories
+1,Oatmeal,32,3,9,160
+2,Protein Powder,3,2,24,120
+3,Coco Powder,27,2,1,130
+4,Ramen,54,14,8,370
+5,Cereal Bar,24,3,1,130
+6,Rice,45,1,4,206
+7,Kirkland Sport,38,0,0,150
+8,Pint Ice Cream,70,26,11,550
+9,Mac n Cheese,49,12,13,370
+10,Red Wine,4,0,0,125
+11,10 Traditional Wings,0,41,88,720
+12,Spicy Garlic,3,6,1,70
+13,Parm Garlic,5,19,2,190
+14,Pepsi,28,0,0,100
+15,Wedges,19,45,6,370
+16,Bleu Cheese,2,34,1,280
+17,Pop Tart,74,9,3,390
+18,Chewy Bar,18,3,1,100
+19,Eggs,0,5,6,70
+20,Steak Ques.,42,27,26,520
+21,Pizza Slice,42,10,19,330
+22,Thin Crust Slice,31,13,17,310
+23,Ranch,1,23,1,210
+24,Cheese Stick,13,7,5,140
+25,Fruit Snacks,17,0,1,70
+26,Rice Krispie,17,2,0,90
+27,Tenders,17,10,13,210
+28,Pasta Sauce,12,1,2,70
+29,Pasta,42,1,7,200
+30,Southwest Wrap,38,36,24,580
+31,Ribs 3oz,0,24,19,299
+32,Potatoe Salad,28,20,7,357
+33,Texas Toast,17,9,3,160
+34,Shepards Pie,52,40,34,693
+35,Potatoe Soup,52,28,29,570
+36,Cheesecake,32,28,7,401
+37,McChicken,39,21,14,400
+38,Small Coke,39,0,0,150
+39,LG Baja Blast,111,0,0,420
+40,Quesadilla (restaurant),110,65,73,1332
+41,Mashed Potatoes,19,7,3,150
+42,Beef Bologna,1,8,3,88
+43,Gatorade Powder,22,0,0,80
+44,Ice Cream,23,9,3,180
+45,Burger Buns,25,1,4,140
+46,Gordita Crunch,41,28,20,490
+47,Steak Crunchwrap,53,38,24,660
+48,Wendys Double Stack,26,24,23,410
+49,Wendys Jr Fries,28,9,3,210
+50,Wendys 4pc Nuggets,9,12,10,190
+51,Wendys Small Coke,66,0,0,240
+52,Quarter Pounder,42,26,30,520
+53,Gyro,73,12,44,593
+54,Nacho Bellgrande,81,38,17,730
+55,JJ Turkey Tom 8in,57,20,25,505
+56,20oz Sprite,64,0,0,240
+57,Chips 1oz,15,10,2,160
+58,Voodoo Pasta,98,81,63,1400
+59,Wendys Sausage Egg Swiss Crois.,35,40,21,590
+60,Wendys Seasoned Potatoes,32,10,3,230
+61,Tortilla Chips,46,10,5,293
+62,Rice Packet,71,6,8,370
