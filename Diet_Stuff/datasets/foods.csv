@@ -1,96 +1,112 @@
-id,meal_id,food_name,servings,carbs,fats,proteins,calories
-1,1,Ramen,1.0,54,14,8,370
-2,1,Chips 1oz,1.0,15,10,2,160
-3,1,Protein Powder,2.0,3,2,24,120
-4,2,Rice,1.0,45,1,4,206
-5,2,Spicy Garlic,1.0,3,6,1,70
-6,3,Fruit Snacks,1.0,17,0,1,70
-7,3,Rice Krispie,1.0,17,2,0,90
-8,3,Cereal Bar,1.0,24,3,1,130
-9,3,Rice,1.0,45,1,4,206
-10,3,Spicy Garlic,1.0,3,6,1,70
-11,3,Protein Powder,2.0,3,2,24,120
-12,4,McChicken,2.0,39,21,14,400
-13,4,Protein Powder,2.0,3,2,24,120
-14,5,Ramen,1.0,54,14,8,370
-15,5,Chips 1oz,1.0,15,10,2,160
-16,5,Protein Powder,2.0,3,2,24,120
-17,6,Rice,1.0,45,1,4,206
-18,6,Spicy Garlic,1.0,3,6,1,70
-19,7,Fruit Snacks,1.0,17,0,1,70
-20,7,Rice Krispie,1.0,17,2,0,90
-21,7,Cereal Bar,1.0,24,3,1,130
-22,7,Rice,1.0,45,1,4,206
-23,8,Spicy Garlic,1.0,3,6,1,70
-24,8,Protein Powder,2.0,3,2,24,120
-25,9,McChicken,2.0,39,21,14,400
-26,9,Protein Powder,2.0,3,2,24,120
-27,10,Ramen,1.0,54,14,8,370
-28,10,Protein Powder,2.0,3,2,24,120
-29,10,Chips 1oz,1.0,15,10,2,160
-30,11,10 Traditional Wings,1.0,0,41,88,720
-31,11,Wendys Jr Fries,1.0,28,9,3,210
-32,11,Ranch,1.0,1,23,1,210
-33,12,Rice,1.0,45,1,4,206
-34,12,Spicy Garlic,1.0,3,6,1,70
-35,12,Fruit Snacks,1.0,17,0,1,70
-36,12,Protein Powder,2.0,3,2,24,120
-37,13,Chewy Bar,2.0,18,3,1,100
-38,13,Oatmeal,2.0,32,3,9,160
-39,13,Protein Powder,2.0,3,2,24,120
-40,14,Chuck Steak 100g,3.0,0,20,25,277
-41,14,Rice,2.0,45,1,4,206
-42,14,Spicy Garlic,2.0,3,6,1,70
-43,15,Gordita Crunch,1.0,41,28,20,490
-44,15,Steak Ques.,1.0,42,27,26,520
-45,15,Gatorade Powder,2.0,22,0,0,80
-46,16,Ice Cream Sandwich,2.0,26,5,2,160
-47,16,Fruit Snacks,1.0,17,0,1,70
-48,17,Cereal Bar,2.0,24,3,1,130
-49,17,Protein Powder,2.0,3,2,24,120
-50,18,Rice,1.0,45,1,4,206
-51,18,Spicy Garlic,1.0,3,6,1,70
-52,18,Eggs,4.0,0,5,6,70
-53,18,Butter,1.0,0,11,0,100
-54,19,Rice,1.0,45,1,4,206
-55,19,Spicy Garlic,1.0,3,6,1,70
-56,19,Protein Powder,2.0,3,2,24,120
-57,19,Fruit Snacks,2.0,17,0,1,70
-58,20,Pop Tart,1.0,74,9,3,390
-59,20,Protein Powder,2.0,3,2,24,120
-60,21,Oatmeal,2.0,32,3,9,160
-61,21,Cereal Bar,2.0,24,3,1,130
-62,21,Protein Powder,2.0,3,2,24,120
-63,22,Rice,2.0,45,1,4,206
-64,22,Protein Powder,2.0,3,2,24,120
-65,22,Butter,1.0,0,11,0,100
-66,23,Quarter Pounder,2.0,42,26,30,520
-67,23,Gatorade Powder,2.0,22,0,0,80
-68,24,Ice Cream Sandwich,1.0,26,5,2,160
-69,24,Protein Powder,2.0,3,2,24,120
-70,25,Ramen,1.0,54,14,8,370
-71,25,Protein Powder,2.0,3,2,24,120
-72,26,Gyro,1.0,73,12,44,593
-73,26,Wendys Jr Fries,2.0,28,9,3,210
-74,27,Rice,1.0,45,1,4,206
-75,27,Spicy Garlic,2.0,3,6,1,70
-76,27,Protein Powder,2.0,3,2,24,120
-77,28,Ice Cream Sandwich,1.0,26,5,2,160
-78,28,Fruit Snacks,1.0,17,0,1,70
-79,29,Oatmeal,2.0,32,3,9,160
-80,29,Cereal Bar,2.0,24,3,1,130
-81,29,Protein Powder,2.0,3,2,24,120
-82,30,Quarter Pounder,2.0,42,26,30,520
-83,31,Gatorade Powder,2.0,22,0,0,80
-84,31,Protein Powder,2.0,3,2,24,120
-85,31,Ice Cream Sandwich,2.0,26,5,2,160
-86,32,Gordita Crunch,1.0,41,28,20,490
-87,32,Steak Ques.,1.0,42,27,26,520
-88,32,LG Baja Blast,1.0,111,0,0,420
-89,33,Ramen,1.0,54,14,8,370
-90,33,Protein Powder,2.0,3,2,24,120
-91,34,Gordita Crunch,2.0,41,28,20,490
-92,35,Gordita Crunch,1.0,41,28,20,490
-93,35,Fruit Snacks,1.0,17,0,1,70
-94,36,Protein Powder,2.0,3,2,24,120
-95,36,Fruit Snacks,1.0,17,0,1,70
+,id,meal_id,food_name,servings,carbs,fats,proteins,calories
+0,1,1,Ramen,1.0,54,14,8,370
+1,2,1,Chips 1oz,1.0,15,10,2,160
+2,3,1,Protein Powder,2.0,3,2,24,120
+3,4,2,Rice,1.0,45,1,4,206
+4,5,2,Spicy Garlic,1.0,3,6,1,70
+5,6,3,Fruit Snacks,1.0,17,0,1,70
+6,7,3,Rice Krispie,1.0,17,2,0,90
+7,8,3,Cereal Bar,1.0,24,3,1,130
+8,9,3,Rice,1.0,45,1,4,206
+9,10,3,Spicy Garlic,1.0,3,6,1,70
+10,11,3,Protein Powder,2.0,3,2,24,120
+11,12,4,McChicken,2.0,39,21,14,400
+12,13,4,Protein Powder,2.0,3,2,24,120
+13,14,5,Ramen,1.0,54,14,8,370
+14,15,5,Chips 1oz,1.0,15,10,2,160
+15,16,5,Protein Powder,2.0,3,2,24,120
+16,17,6,Rice,1.0,45,1,4,206
+17,18,6,Spicy Garlic,1.0,3,6,1,70
+18,19,7,Fruit Snacks,1.0,17,0,1,70
+19,20,7,Rice Krispie,1.0,17,2,0,90
+20,21,7,Cereal Bar,1.0,24,3,1,130
+21,22,7,Rice,1.0,45,1,4,206
+22,23,8,Spicy Garlic,1.0,3,6,1,70
+23,24,8,Protein Powder,2.0,3,2,24,120
+24,25,9,McChicken,2.0,39,21,14,400
+25,26,9,Protein Powder,2.0,3,2,24,120
+26,27,10,Ramen,1.0,54,14,8,370
+27,28,10,Protein Powder,2.0,3,2,24,120
+28,29,10,Chips 1oz,1.0,15,10,2,160
+29,30,11,10 Traditional Wings,1.0,0,41,88,720
+30,31,11,Wendys Jr Fries,1.0,28,9,3,210
+31,32,11,Ranch,1.0,1,23,1,210
+32,33,12,Rice,1.0,45,1,4,206
+33,34,12,Spicy Garlic,1.0,3,6,1,70
+34,35,12,Fruit Snacks,1.0,17,0,1,70
+35,36,12,Protein Powder,2.0,3,2,24,120
+36,37,13,Chewy Bar,2.0,18,3,1,100
+37,38,13,Oatmeal,2.0,32,3,9,160
+38,39,13,Protein Powder,2.0,3,2,24,120
+39,40,14,Chuck Steak 100g,3.0,0,20,25,277
+40,41,14,Rice,2.0,45,1,4,206
+41,42,14,Spicy Garlic,2.0,3,6,1,70
+42,43,15,Gordita Crunch,1.0,41,28,20,490
+43,44,15,Steak Ques.,1.0,42,27,26,520
+44,45,15,Gatorade Powder,2.0,22,0,0,80
+45,46,16,Ice Cream Sandwich,2.0,26,5,2,160
+46,47,16,Fruit Snacks,1.0,17,0,1,70
+47,48,17,Cereal Bar,2.0,24,3,1,130
+48,49,17,Protein Powder,2.0,3,2,24,120
+49,50,18,Rice,1.0,45,1,4,206
+50,51,18,Spicy Garlic,1.0,3,6,1,70
+51,52,18,Eggs,4.0,0,5,6,70
+52,53,18,Butter,1.0,0,11,0,100
+53,54,19,Rice,1.0,45,1,4,206
+54,55,19,Spicy Garlic,1.0,3,6,1,70
+55,56,19,Protein Powder,2.0,3,2,24,120
+56,57,19,Fruit Snacks,2.0,17,0,1,70
+57,58,20,Pop Tart,1.0,74,9,3,390
+58,59,20,Protein Powder,2.0,3,2,24,120
+59,60,21,Oatmeal,2.0,32,3,9,160
+60,61,21,Cereal Bar,2.0,24,3,1,130
+61,62,21,Protein Powder,2.0,3,2,24,120
+62,63,22,Rice,2.0,45,1,4,206
+63,64,22,Protein Powder,2.0,3,2,24,120
+64,65,22,Butter,1.0,0,11,0,100
+65,66,23,Quarter Pounder,2.0,42,26,30,520
+66,67,23,Gatorade Powder,2.0,22,0,0,80
+67,68,24,Ice Cream Sandwich,1.0,26,5,2,160
+68,69,24,Protein Powder,2.0,3,2,24,120
+69,70,25,Ramen,1.0,54,14,8,370
+70,71,25,Protein Powder,2.0,3,2,24,120
+71,72,26,Gyro,1.0,73,12,44,593
+72,73,26,Wendys Jr Fries,2.0,28,9,3,210
+73,74,27,Rice,1.0,45,1,4,206
+74,75,27,Spicy Garlic,2.0,3,6,1,70
+75,76,27,Protein Powder,2.0,3,2,24,120
+76,77,28,Ice Cream Sandwich,1.0,26,5,2,160
+77,78,28,Fruit Snacks,1.0,17,0,1,70
+78,79,29,Oatmeal,2.0,32,3,9,160
+79,80,29,Cereal Bar,2.0,24,3,1,130
+80,81,29,Protein Powder,2.0,3,2,24,120
+81,82,30,Quarter Pounder,2.0,42,26,30,520
+82,83,31,Gatorade Powder,2.0,22,0,0,80
+83,84,31,Protein Powder,2.0,3,2,24,120
+84,85,31,Ice Cream Sandwich,2.0,26,5,2,160
+85,86,32,Gordita Crunch,1.0,41,28,20,490
+86,87,32,Steak Ques.,1.0,42,27,26,520
+87,88,32,LG Baja Blast,1.0,111,0,0,420
+88,89,33,Ramen,1.0,54,14,8,370
+89,90,33,Protein Powder,2.0,3,2,24,120
+90,91,34,Gordita Crunch,2.0,41,28,20,490
+91,92,35,Gordita Crunch,1.0,41,28,20,490
+92,93,35,Fruit Snacks,1.0,17,0,1,70
+93,94,36,Protein Powder,2.0,3,2,24,120
+94,95,36,Fruit Snacks,1.0,17,0,1,70
+95,96,37,Cereal Bar,1.0,24,3,1,130
+96,97,37,Chewy Bar,1.0,18,3,1,100
+97,98,37,Hot Dog,2.0,1,12,5,140
+98,99,37,Hot Dog Bun,2.0,23,1,4,130
+99,100,37,Chips 1oz,1.0,15,10,2,160
+100,101,38,Protein Powder,2.0,3,2,24,120
+101,102,38,Pop Tart,1.0,74,9,3,390
+102,103,39,Quesadilla (restaurant),1.0,110,65,73,1332
+103,104,39,Small Coke,1.0,39,0,0,150
+104,105,40,Protein Powder,2.0,3,2,24,120
+105,106,40,Fruit Snacks,1.0,17,0,1,70
+106,107,41,Cereal Bar,1.0,24,3,1,130
+107,108,41,Ramen,1.0,54,14,8,370
+108,109,41,Protein Powder,2.0,3,2,24,120
+109,110,42,Rice,1.0,45,1,4,206
+110,111,42,Protein Powder,2.0,3,2,24,120
