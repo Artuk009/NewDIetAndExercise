@@ -12,6 +12,9 @@ def main():
     cursor = conn.cursor()
     diet.get_limited_rows(cursor, 5)
 
+    # TODO: Create function to get master list of foods from database
+    # TODO: Creat function to update date table and meals table
+
 
 if __name__ == "__main__":
     main()

@@ -3,9 +3,9 @@ import mysql.connector as conn
 
 def get_connection():
     # Function to create a connection to the database
-    # user = input("Enter your MySQL username: ")
-    # password = input("Enter your MySQL password: ")
-    connection = conn.connect(host="localhost", user='root', password='Artuk150820,./!', database="diet")
+    user = input("Enter your MySQL username: ")
+    password = input("Enter your MySQL password: ")
+    connection = conn.connect(host="localhost", user=user, password=password, database="diet")
     print("Connection successful!")
     return connection
 
