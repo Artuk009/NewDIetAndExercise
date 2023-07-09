@@ -101,6 +101,17 @@ DELIMITER ;
 
 CALL GetFoodInfoFromFoodListMaster('Ramen');
 
+-- Create procedure to get all body measurements json for all dates
+CREATE PROCEDURE GetBodyMeasurementsByDate()
+SELECT b.id, d.date, b.body_measurements->'$.body_weight' AS body_weight,
+       b.body_measurements->'$.body_fat' AS body_fat, b.body_measurements->'$.muscle_mass' AS muscle_mass,
+       b.body_measurements->'$.fat_mass' AS fat_mass, b.body_measurements->'$.workout_type' AS workout_type
+FROM body_measurements_json b
+INNER JOIN dates_2023 d on d.id = b.date_id
+ORDER BY b.id;
+
+CALL GetBodyMeasurementsByDate();
+drop procedure GetBodyMeasurementsByDate;
 -- JSON CONVERSIONS --
 
 -- Convert food properties to JSON in food list master
@@ -114,6 +125,12 @@ SELECT f.id, f.meal_id, f.food_name, f.servings,
        JSON_OBJECT('carbs', f.carbs, 'fats', f.fats, 'proteins', f.proteins, 'calories', f.calories) AS
          nutrition_info
 FROM foods f;
+
+-- Convert body measurements to JSON
+SELECT b.id, b.date_id,
+       JSON_OBJECT('body_weight', b.body_weight, 'body_fat', b.body_fat, 'muscle_mass', b.muscle_mass,
+                   'fat_mass', b.fat_mass, 'workout_type', b.workout_type) AS body_measurements
+FROM body_measurements b;
 
 -- TRIGGERS --
 
