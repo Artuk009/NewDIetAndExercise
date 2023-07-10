@@ -1,25 +1,3 @@
-import mysql.connector as conn
-
-
-def get_connection():
-    # Function to create a connection to the database
-    user = input("Enter your MySQL username: ")
-    password = input("Enter your MySQL password: ")
-    connection = conn.connect(host="localhost", user=user, password=password, database="diet")
-    print("Connection successful!")
-    return connection
-
-
-def get_limited_rows(cursor, limit):
-    # Function to get a limited number of rows from the database
-    cursor.execute(f'''CALL GetFoodsByMealAndDateFromFoods();''')
-    records = cursor.fetchmany(limit)
-    print("Latest 5 entries:")
-    for record in records:
-        print(f"[Id: {record[0]}] - {record[1]} - {record[2]} - Name: {record[3]} - Servings: {record[4]} - "
-              f"Fats: {record[5]} - Carbs: {record[6]} - Calories: {record[7]} - Proteins: {record[8]}")
-
-
 class Diet:
     # Class to create and store food entries in teh database
     class Foods:
@@ -51,3 +29,16 @@ class Diet:
 
         def __str__(self):
             return f"{self.date}"
+
+    def get_latest_food_entries(connection, limit):
+        cursor = connection.cursor(buffered=True)
+
+        # Function to get a limited number of rows from the database
+        cursor.execute(f'''CALL GetFoodsByMealAndDateFromFoods();''')
+        records = cursor.fetchmany(limit)
+        print("Latest 5 entries:")
+        for record in records:
+            print(f"[Id: {record[0]}] - {record[1]} - {record[2]} - Name: {record[3]} - Servings: {record[4]} - "
+                  f"Fats: {record[5]} - Carbs: {record[6]} - Calories: {record[7]} - Proteins: {record[8]}")
+
+        cursor.close()

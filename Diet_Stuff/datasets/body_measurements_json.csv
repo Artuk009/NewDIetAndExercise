@@ -12,4 +12,5 @@
 10,11,12,"{""body_fat"": 23.9, ""fat_mass"": 45.9, ""body_weight"": 192, ""muscle_mass"": 80.1, ""workout_type"": ""REST""}"
 11,12,13,"{""body_fat"": 24.6, ""fat_mass"": 47.2, ""body_weight"": 192, ""muscle_mass"": 79.0, ""workout_type"": ""LEGS""}"
 12,13,15,"{""body_fat"": 25.4, ""fat_mass"": 49.1, ""body_weight"": 193.0, ""muscle_mass"": 78.4, ""workout_type"": ""LEGS""}"
-14,14,16,"{""body_fat"": 25.6, ""fat_mass"": 50.2, ""body_weight"": 196.2, ""muscle_mass"": 79.6, ""workout_type"": ""REST""}"
+13,14,16,"{""body_fat"": 25.6, ""fat_mass"": 50.2, ""body_weight"": 196.2, ""muscle_mass"": 79.6, ""workout_type"": ""REST""}"
+15,15,17,"{""body_fat"": 24.3, ""fat_mass"": 46.9, ""body_weight"": 192.6, ""muscle_mass"": 79.6, ""workout_type"": ""LEGS""}"
