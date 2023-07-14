@@ -11,5 +11,5 @@ def get_user_and_password():
 def get_connection(user, password):
     # Function to create a connection to the database
     connection = conn.connect(host="localhost", user=user, password=password, database="diet")
-    print("Connection successful!")
+    print("-------------Connected----------------")
     return connection

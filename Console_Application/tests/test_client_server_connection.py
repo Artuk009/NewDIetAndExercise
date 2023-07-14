@@ -1,5 +1,5 @@
 import unittest
-import client_server_connection as cdc
+from connection import client_server_connection as cdc
 
 
 class TestConnection(unittest.TestCase):
