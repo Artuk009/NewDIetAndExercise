@@ -22,9 +22,13 @@ def get_dates(connection):
 
 
 def show_dates_table(dates_table):
+    print("Dates Table:")
+    print("_" * 21)
+    print("| {:>4} | {:>10} |".format("ID", "Date"))
+    print("_" * 21)
     for entry in dates_table:
-        print(f"ID: {entry[0]} DATE: {entry[1]}")
-
+        print("| {:>4} | {} |".format(entry[0], entry[1]))
+    print("_" * 21)
 
 def set_date():
     year_month = dt.datetime.now().strftime("%Y-%m")

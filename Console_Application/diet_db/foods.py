@@ -12,10 +12,15 @@ def get_latest_food_entries(connection, limit):
 
     # Print the results
     print("Latest 5 entries:")
-    print(columns)
+    print("_" * 88)
+    print("| {:>3} | {:>10} | {:>10} | {:>20} | {} | {:>4} | {:>4} | {:>4} | {:>4} |".format(
+        'ID', 'Date', 'Meal', 'Food', 'S', 'Carb', 'Fats', 'Prot', 'Cals'
+    ))
+    print("_" * 88)
     for data in dataset:
-        print(f"{data[0]} - {data[1]} - {data[2]} - {data[3]} - {data[4]} -"
-              f" {data[5]} - {data[6]} - {data[7]} - {data[8]}")
+        print("| {} | {} | {:>10} | {:>20} | {} | {:>4} | {:>4} | {:>4} | {:>4} |".format(
+            data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8]))
+    print("_" * 88)
 
     cursor.close()
 
