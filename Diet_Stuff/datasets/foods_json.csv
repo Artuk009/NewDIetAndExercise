@@ -227,3 +227,6 @@
 225,226,102,Hot Dog,2.0,"{""fats"": 12, ""carbs"": 1, ""calories"": 140, ""proteins"": 5}"
 226,227,102,Hot Dog Bun,2.0,"{""fats"": 1, ""carbs"": 23, ""calories"": 130, ""proteins"": 4}"
 227,228,102,Chips 1oz,1.0,"{""fats"": 10, ""carbs"": 15, ""calories"": 160, ""proteins"": 2}"
+228,229,103,Pizza Slice,2.0,"{""fats"": 10, ""carbs"": 42, ""calories"": 330, ""proteins"": 19}"
+229,230,103,Protein Powder,2.0,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+230,231,104,Protein Powder,2.0,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
