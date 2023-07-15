@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import patch
 from diet_db import dates as d
 import connection.client_server_connection as csc
 import datetime
@@ -15,14 +16,15 @@ class DatesTestCase(unittest.TestCase):
         user, password = csc.get_user_and_password()
         connection = csc.get_connection(user, password)
         dates_table = d.get_dates(connection)
-        assert dates_table[0] == (21,  datetime.date(2023, 7, 13))
+        # pass most recent id and date
+        assert dates_table[0] == (22,  datetime.date(2023, 7, 14))
 
-    # TODO: Finish these tests
-    def test_set_date(self):
-        pass
+    @patch('builtins.input', return_value="y")
+    def test_set_date(self, mock_input):
+        self.assertEqual(d.set_date('01'), "2023-07-01")
 
     def test_add_date_to_db(self):
-        pass
+        pass  # TODO: Finish this test
 
 
 if __name__ == '__main__':
