@@ -9,8 +9,16 @@ I plan to create web and mobile applications based on the logic
 from these notebooks. I am perfecting the database structure 
 before I begin the development of the applications.
 
+### Console Application (Work in Progress)
+* <a href="https://github.com/Artuk009/NewDIetAndExercise/tree/b2cc8f0e31b921dee4c4c3d52a24a3e775cc2959/Console_Application">Console Application</a> :
+This is the implementation of the MySQL database structure that I designed in the analysis section. I am in the process
+of converting the Pandas layout to a MySQL connector based application which should translate better to a web application.
+I have been implementing unit testing as I go along to ensure that the application is working as intended with the 
+unittest module.
+* Tools: MySQL Connector and Unittest
+
 ### Diet Analysis
-* <a href="https://github.com/Artuk009/NewDIetAndExercise/blob/345e19b72e49c1756616afae4790c3b7eee715fd/Diet_Stuff/diet_v3(Latest).ipynb">Diet Notebook</a> :
+* <a href="https://github.com/Artuk009/NewDIetAndExercise/blob/b2cc8f0e31b921dee4c4c3d52a24a3e775cc2959/Diet_Stuff/diet_v5(Latest).ipynb">Diet Notebook</a> :
 This notebook contains the code for the diet analysis. It is the latest
 working version of the diet analysis code. The current features include
 a MySQL database connection with a normalized database structure, the ability
@@ -18,6 +26,12 @@ to update entries within the database, and relevant calculations and
 visualizations for analysis. 
 * Tools: PyMySQL, Pandas, Seaborn, and SQLAlchemy.
 
-### Other Notebooks
-* Once I establish a good foundation for the diet analysis, I will begin
-adapting the other notebooks to the new database structure.
+### Queries
+* <a href="https://github.com/Artuk009/NewDIetAndExercise/blob/b2cc8f0e31b921dee4c4c3d52a24a3e775cc2959/Queries/diet_MYSQL.sql">MySQL Queries</a> :
+These are the queries I used to construct the schema for the MySQL database in addition to thr triggers and stored procedures
+associated with the console application. I took a highly normalized approach to the database structure to ensure that the
+tables are easily maintainable and scalable. I also included a trigger that automatically populates meal entries when a
+date is logged because it wouldn't make sense not to have them in any scenario.
+* Tools: MySQL and DataGrip Workbench (PyCharm Plugin)
+
+### Exercise Analysis (Suspended for Now)
