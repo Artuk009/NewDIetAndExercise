@@ -3,8 +3,8 @@ import mysql.connector as conn
 
 def get_user_and_password():
     # Function to get the user's MySQL username and password
-    user = input("Enter your MySQL username: ")
-    password = input("Enter your MySQL password: ")
+    user = 'root'  # input("Enter your MySQL username: ")
+    password = 'Artuk150820,./!'  # input("Enter your MySQL password: ")
     return user, password
 
 

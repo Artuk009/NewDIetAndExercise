@@ -24,15 +24,15 @@ def get_dates(connection):
 def show_dates_table(dates_table):
     print("Dates Table:")
     print("_" * 21)
-    print("| {:>4} | {:>10} |".format("ID", "Date"))
+    print("| {:<4} | {:<10} |".format("ID", "Date"))
     print("_" * 21)
     for entry in dates_table:
-        print("| {:>4} | {} |".format(entry[0], entry[1]))
+        print("| {:<4} | {} |".format(entry[0], entry[1]))
     print("_" * 21)
 
-def set_date():
+
+def set_date(day):
     year_month = dt.datetime.now().strftime("%Y-%m")
-    day = input("Enter the day of the month: ")
 
     # Confirm that the date is correct
     choice = input(f"Is {year_month}-{day} the correct date? [Y/N]: ")
@@ -40,18 +40,18 @@ def set_date():
         date = f"{year_month}-{day}"
         return date
     elif choice.lower() == "n":
-        set_date()
+        set_date(day)
     else:
         print("Invalid input. Please try again.")
-        set_date()
+        set_date(day)
 
 
 def add_date_to_db(connection, date, dates_table):
     cursor = connection.cursor(buffered=True)
     new_date = [dates_table[0][0]+1, date]
 
-    if date == new_date[1]:
-        raise Exception("Date already entered")
+    # if date == new_date[1]:
+    #     raise Exception("Date already entered")
 
     query = '''
     INSERT INTO dates_console_test (id, date) 
