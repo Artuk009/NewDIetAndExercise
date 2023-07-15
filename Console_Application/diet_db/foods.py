@@ -7,22 +7,64 @@ def get_latest_food_entries(connection, limit):
     results = next(cursor.stored_results())
     dataset = results.fetchmany(limit)
 
-    # Get columns
-    columns = [column[0] for column in results.description]
-
     # Print the results
     print("Latest 5 entries:")
-    print("_" * 88)
-    print("| {:>3} | {:>10} | {:>10} | {:>20} | {} | {:>4} | {:>4} | {:>4} | {:>4} |".format(
+    print("_" * 93)
+    print("| {:<3} | {:<10} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} |".format(
         'ID', 'Date', 'Meal', 'Food', 'S', 'Carb', 'Fats', 'Prot', 'Cals'
     ))
-    print("_" * 88)
+    print("_" * 93)
     for data in dataset:
-        print("| {} | {} | {:>10} | {:>20} | {} | {:>4} | {:>4} | {:>4} | {:>4} |".format(
-            data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8]))
-    print("_" * 88)
+        print("| {} | {} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} |".format(
+            data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8]))
+    print("_" * 93)
 
     cursor.close()
+
+
+def get_food_list_master(connection):
+    cursor = connection.cursor(buffered=True)
+
+    # Function to get all foods from the food_list_master table and store the names in a list
+    existing_foods = []
+    query = "SELECT food_name FROM food_list_master_json"
+    cursor.execute(query)
+    for food in cursor:
+        existing_foods.append(food[0])
+
+    cursor.close()
+    return existing_foods
+
+
+def set_meal():
+    # Select the meal of the day
+    meal_of_day = input("Enter the meal of the day: [1]Breakfast [2]Lunch [3]Dinner [4]Post-Workout\n")
+
+    meal = ''
+    if meal_of_day == '1':
+        meal = 'Breakfast'
+    elif meal_of_day == '2':
+        meal = 'Lunch'
+    elif meal_of_day == '3':
+        meal = 'Dinner'
+    elif meal_of_day == '4':
+        meal = 'Post-Workout'
+    else:
+        print("Invalid input. Please try again.")
+        set_meal()
+
+    return meal
+
+
+def get_current_foods_count(connection):
+    cursor = connection.cursor(buffered=True)
+
+    # Function to get the current foods from the database
+    cursor.execute("SELECT * FROM foods_json")
+    current_foods = cursor.fetchall()
+
+    cursor.close()
+    return len(current_foods)
 
 
 class Foods:
