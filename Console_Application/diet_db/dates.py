@@ -8,12 +8,12 @@ def get_dates(connection):
     cursor = connection.cursor(buffered=True)
 
     dates_table = []
-    dates_query = '''
+    query = '''
     SELECT * 
     FROM dates_2023 
     ORDER BY id DESC
     LIMIT 5;'''
-    cursor.execute(dates_query)
+    cursor.execute(query)
     records = cursor.fetchall()
     for record in records:
         dates_table.append((record[0], record[1]))
@@ -50,12 +50,23 @@ def set_date(day):
         set_date(day)
 
 
-def set_id(dates_table):
+def set_new_date_id(dates_table):
 
     """Function to set the id of the new date"""
 
     new_id = dates_table[0][0] + 1
     return new_id
+
+
+def get_latest_date_id(connection):
+
+    """Function to get the id of the latest date"""
+
+    cursor = connection.cursor(buffered=True)
+    cursor.execute("SELECT id FROM dates_2023 ORDER BY id DESC LIMIT 1")
+    latest_date_id = cursor.fetchone()[0]
+    cursor.close()
+    return latest_date_id
 
 
 class Dates:
@@ -65,9 +76,15 @@ class Dates:
     def __init__(self, date_id, date):
         self.date_id = date_id
         self.date = date
+        self.meals = {}
 
     def __str__(self):
-        return f"{self.date}"
+        return f"{self.date} - {self.meals}"
+
+    def get_meals_for_date(self, meals_table):
+
+        for meal in meals_table:
+            self.meals[meal[0]] = meal[2]
 
     def add_date_to_db(self, connection):
 

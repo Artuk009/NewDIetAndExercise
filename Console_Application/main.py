@@ -1,5 +1,6 @@
 from diet_db import foods as f
 from diet_db import dates as d
+from diet_db import meals as m
 from connection import client_server_connection as csc
 
 
@@ -25,14 +26,15 @@ def main():
 
         match choice:
             case "1":
-                f.get_latest_food_entries(connection, 5)
+                entry_number = input("Enter the number of entries to view: ")
+                f.get_latest_food_entries(connection, entry_number)
 
             case "2":
                 d.show_dates_table(dates_table)
 
             case "3":
                 day = input("Enter the day of the month: ")
-                new_id = d.set_id(dates_table)
+                new_id = d.set_new_date_id(dates_table)
                 new_date = d.set_date(day)
                 print("The date has been set to", new_date, "with an id of", new_id)
 
@@ -42,7 +44,8 @@ def main():
             case "4":
                 # print(f.set_meal())
                 # print(f.get_current_foods_count(connection))
-                pass
+                meals_table = m.get_meals(connection, d.get_latest_date_id(connection))
+                print(meals_table)
 
             case "9":
                 print("Exiting...")
