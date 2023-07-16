@@ -7,13 +7,13 @@ from connection import client_server_connection as csc
 def main():
 
     # Get user and password
-    user, password = csc.get_user_and_password()
+    username, password = csc.get_user_and_password()
 
     # TODO: Creat function to update date table and meals table
 
     # Chose an option to execute
     while True:
-        connection = csc.get_connection(user, password)
+        connection = csc.get_connection(username, password)
         choice = input("Select an option: \n"
                        "[1] View Latest Food Entries \n"
                        "[2] View Dates Table \n"
