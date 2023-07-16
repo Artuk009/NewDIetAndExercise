@@ -15,9 +15,9 @@ class DatesTestCase(unittest.TestCase):
     def test_get_dates(self):
         user, password = csc.get_user_and_password()
         connection = csc.get_connection(user, password)
-        dates_table = d.get_dates(connection)
+        dates_table = d.get_dates_table(connection)
         # pass most recent id and date
-        assert dates_table[0] == (22,  datetime.date(2023, 7, 14))
+        assert dates_table[0] == (23,  datetime.date(2023, 7, 15))
 
     @patch('builtins.input', return_value="y")
     def test_set_date(self, mock_input):
