@@ -1,6 +1,6 @@
 from diet_db import foods as f
-from connection import client_server_connection as csc
 from diet_db import dates as d
+from connection import client_server_connection as csc
 
 
 def main():
@@ -32,10 +32,12 @@ def main():
 
             case "3":
                 day = input("Enter the day of the month: ")
-                date = d.set_date(day)
-                print("The date has been set to", date)
+                new_id = d.set_id(dates_table)
+                new_date = d.set_date(day)
+                print("The date has been set to", new_date, "with an id of", new_id)
 
-                d.add_date_to_db(connection, date, dates_table)
+                date_entry = d.Dates(new_id, new_date)
+                date_entry.add_date_to_db(connection)
 
             case "4":
                 # print(f.set_meal())

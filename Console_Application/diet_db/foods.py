@@ -1,8 +1,10 @@
 # Class to create and store food entries in the database
 def get_latest_food_entries(connection, limit):
+
+    """Function to get the latest food entries from the database and print them to the console"""
+
     cursor = connection.cursor(buffered=True)
 
-    # Function to get a limited number of rows from the database
     cursor.callproc("GetFoodsByMealAndDateFromFoods")
     results = next(cursor.stored_results())
     dataset = results.fetchmany(limit)
@@ -25,7 +27,8 @@ def get_latest_food_entries(connection, limit):
 def get_food_list_master(connection):
     cursor = connection.cursor(buffered=True)
 
-    # Function to get all foods from the food_list_master table and store the names in a list
+    """Function to get all foods from the food_list_master table and store the names in a list"""
+
     existing_foods = []
     query = "SELECT food_name FROM food_list_master_json"
     cursor.execute(query)
@@ -37,7 +40,9 @@ def get_food_list_master(connection):
 
 
 def set_meal():
-    # Select the meal of the day
+
+    """Select the meal of the day"""
+
     meal_of_day = input("Enter the meal of the day: [1]Breakfast [2]Lunch [3]Dinner [4]Post-Workout\n")
 
     meal = ''
@@ -57,9 +62,11 @@ def set_meal():
 
 
 def get_current_foods_count(connection):
+
+    """Function to get the current foods from the database"""
+
     cursor = connection.cursor(buffered=True)
 
-    # Function to get the current foods from the database
     cursor.execute("SELECT * FROM foods_json")
     current_foods = cursor.fetchall()
 
@@ -68,6 +75,9 @@ def get_current_foods_count(connection):
 
 
 class Foods:
+
+    """Class to create and store food entries in the database"""
+
     def __init__(self, id, meal_id, food_name, servings, nutrition_info):
         self.id = id
         self.meal_id = meal_id

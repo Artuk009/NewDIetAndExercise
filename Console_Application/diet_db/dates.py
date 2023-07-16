@@ -1,11 +1,12 @@
 import datetime as dt
 
 
-# Class to create and reference the dates in the database
 def get_dates(connection):
+
+    """Function to get the last 5 dates from the dates table"""
+
     cursor = connection.cursor(buffered=True)
 
-    # Function to get all dates from the database
     dates_table = []
     dates_query = '''
     SELECT * 
@@ -32,6 +33,9 @@ def show_dates_table(dates_table):
 
 
 def set_date(day):
+
+    """Function to set the date of the new entry"""
+
     year_month = dt.datetime.now().strftime("%Y-%m")
 
     # Confirm that the date is correct
@@ -46,25 +50,17 @@ def set_date(day):
         set_date(day)
 
 
-def add_date_to_db(connection, date, dates_table):
-    cursor = connection.cursor(buffered=True)
-    new_date = [dates_table[0][0]+1, date]
+def set_id(dates_table):
 
-    # if date == new_date[1]:
-    #     raise Exception("Date already entered")
+    """Function to set the id of the new date"""
 
-    query = '''
-    INSERT INTO dates_console_test (id, date) 
-    VALUES (%s, %s)'''
-    params = (new_date[0], new_date[1])
-    cursor.execute(query, params)
-
-    connection.commit()
-    cursor.close()
-    print("Date inserted to database")
+    new_id = dates_table[0][0] + 1
+    return new_id
 
 
 class Dates:
+
+    """Class to create a new date object"""
 
     def __init__(self, date_id, date):
         self.date_id = date_id
@@ -73,4 +69,22 @@ class Dates:
     def __str__(self):
         return f"{self.date}"
 
+    def add_date_to_db(self, connection):
 
+        """Function to add the new date to the database"""
+
+        cursor = connection.cursor(buffered=True)
+        new_date = (self.date_id, self.date)
+
+        # if date == new_date[1]:
+        #     raise Exception("Date already entered")
+
+        query = '''
+        INSERT INTO dates_console_test (id, date) 
+        VALUES (%s, %s)'''
+        params = (new_date[0], new_date[1])
+        cursor.execute(query, params)
+
+        connection.commit()
+        cursor.close()
+        print("Date inserted to database")
