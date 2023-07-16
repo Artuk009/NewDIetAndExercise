@@ -9,7 +9,6 @@ def main():
     # Get user and password
     user, password = csc.get_user_and_password()
 
-    # TODO: Create function to get master list of foods from database
     # TODO: Creat function to update date table and meals table
 
     # Chose an option to execute
@@ -22,7 +21,8 @@ def main():
                        "[4] Log a New Food \n"
                        "[9] Exit \n")
 
-        dates_table = d.get_dates(connection)
+        dates_table = d.get_dates_table(connection)
+        meals_table = m.get_meals_table(connection, d.get_latest_date_id(connection))
 
         match choice:
             case "1":
@@ -42,10 +42,11 @@ def main():
                 date_entry.add_date_to_db(connection)
 
             case "4":
-                # print(f.set_meal())
+                # print(m.set_meal())
                 # print(f.get_current_foods_count(connection))
-                meals_table = m.get_meals(connection, d.get_latest_date_id(connection))
-                print(meals_table)
+                current_date = d.Dates(d.get_latest_date_id(connection), d.get_latest_date(connection))
+                current_date.get_meals_for_date(meals_table)
+                print(current_date)
 
             case "9":
                 print("Exiting...")

@@ -1,4 +1,3 @@
-# Class to create and store food entries in the database
 def get_latest_food_entries(connection, limit):
 
     """Function to get the latest food entries from the database and print them to the console"""
@@ -34,27 +33,6 @@ def get_food_list_master(connection):
         existing_foods.append(food[0])
     cursor.close()
     return existing_foods
-
-
-def set_meal():
-
-    """Select the meal of the day"""
-
-    meal_of_day = input("Enter the meal of the day: [1]Breakfast [2]Lunch [3]Dinner [4]Post-Workout\n")
-
-    meal = ''
-    if meal_of_day == '1':
-        meal = 'Breakfast'
-    elif meal_of_day == '2':
-        meal = 'Lunch'
-    elif meal_of_day == '3':
-        meal = 'Dinner'
-    elif meal_of_day == '4':
-        meal = 'Post-Workout'
-    else:
-        print("Invalid input. Please try again.")
-        set_meal()
-    return meal
 
 
 def get_current_foods_count(connection):

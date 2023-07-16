@@ -1,7 +1,7 @@
 import datetime as dt
 
 
-def get_dates(connection):
+def get_dates_table(connection):
 
     """Function to get the last 5 dates from the dates table"""
 
@@ -69,6 +69,17 @@ def get_latest_date_id(connection):
     return latest_date_id
 
 
+def get_latest_date(connection):
+
+    """Function to get the latest date"""
+
+    cursor = connection.cursor(buffered=True)
+    cursor.execute("SELECT date FROM dates_2023 ORDER BY id DESC LIMIT 1")
+    latest_date = cursor.fetchone()[0]
+    cursor.close()
+    return latest_date
+
+
 class Dates:
 
     """Class to create a new date object"""
@@ -83,8 +94,10 @@ class Dates:
 
     def get_meals_for_date(self, meals_table):
 
+        """Function to get the meals for the date"""
+
         for meal in meals_table:
-            self.meals[meal[0]] = meal[2]
+            self.meals[meal[2]] = meal[0]
 
     def add_date_to_db(self, connection):
 
