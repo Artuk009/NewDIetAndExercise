@@ -5,8 +5,8 @@ def get_user_and_password():
 
     """Function to get the user and password for the database"""
 
-    user = input("Enter your MySQL username: ")
-    password = input("Enter your MySQL password: ")
+    user = 'diet_db_editor'
+    password = 'diet_db_editor_password'
     return user, password
 
 

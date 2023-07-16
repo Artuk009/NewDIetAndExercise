@@ -27,7 +27,7 @@ def main():
         match choice:
             case "1":
                 entry_number = input("Enter the number of entries to view: ")
-                f.get_latest_food_entries(connection, entry_number)
+                f.get_latest_food_entries(connection, int(entry_number))
 
             case "2":
                 d.show_dates_table(dates_table)
