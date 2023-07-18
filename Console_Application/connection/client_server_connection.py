@@ -1,19 +1,38 @@
 import mysql.connector as conn
 
 
-def get_user_and_password():
+class ConnectionCredentials:
 
-    """Function to get the user and password for the database"""
+    """Class to get the credentials for the database"""
 
-    username = 'diet_db_editor'
-    password = 'diet_db_editor_password'
-    return username, password
+    sql_username = 'diet_db_editor'
+    sql_password = 'diet_db_editor_password'
+
+    def __init__(self):
+        self.username = ConnectionCredentials.sql_username
+        self.password = ConnectionCredentials.sql_password
+
+    def get_username(self):
+        return self.username
+
+    def get_password(self):
+        return self.password
 
 
-def get_connection(username, password):
+class Connection:
 
-    """Function to create a connection to the database"""
+    """Class to create a connection to the database"""
 
-    connection = conn.connect(host="localhost", user=username, password=password, database="diet")
-    print("-------------Connected----------------")
-    return connection
+    def __init__(self, username, password):
+        self.connection = Connection.connect(self, username, password)
+
+    def get_connection(self):
+        return self.connection
+
+    def connect(self, username, password):
+
+        """Function to create a connection to the database"""
+
+        connection = conn.connect(host="localhost", user=username, password=password, database="diet")
+        print("-------------Connected----------------")
+        return connection

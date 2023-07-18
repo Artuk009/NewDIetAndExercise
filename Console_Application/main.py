@@ -1,19 +1,24 @@
 from diet_db import foods as f
 from diet_db import dates as d
 from diet_db import meals as m
-from connection import client_server_connection as csc
+
+from connection.client_server_connection import ConnectionCredentials, Connection
 
 
 def main():
 
-    # Get user and password
-    username, password = csc.get_user_and_password()
+    # Get credentials for database
+    credentials = ConnectionCredentials()
 
     # TODO: Creat function to update date table and meals table
 
     # Chose an option to execute
     while True:
-        connection = csc.get_connection(username, password)
+        connection = Connection(
+            credentials.get_username(),
+            credentials.get_password()
+        ).get_connection()
+
         choice = input("Select an option: \n"
                        "[1] View Latest Food Entries \n"
                        "[2] View Dates Table \n"
