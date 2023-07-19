@@ -19,4 +19,5 @@
 17,18,20,"{""body_fat"": 26.1, ""fat_mass"": 50.9, ""body_weight"": 195.2, ""muscle_mass"": 78.5, ""workout_type"": ""REST""}"
 18,19,21,"{""body_fat"": 24.5, ""fat_mass"": 47.9, ""body_weight"": 195.6, ""muscle_mass"": 80.7, ""workout_type"": ""LEGS""}"
 19,20,22,"{""body_fat"": 25.6, ""fat_mass"": 50.0, ""body_weight"": 195.2, ""muscle_mass"": 79.1, ""workout_type"": ""REST""}"
-21,21,24,"{""body_fat"": 26.8, ""fat_mass"": 52.0, ""body_weight"": 194.4, ""muscle_mass"": 77.2, ""workout_type"": ""REST""}"
+20,21,24,"{""body_fat"": 26.8, ""fat_mass"": 52.0, ""body_weight"": 194.4, ""muscle_mass"": 77.2, ""workout_type"": ""REST""}"
+22,22,27,"{""body_fat"": 23.8, ""fat_mass"": 46.0, ""body_weight"": 193.2, ""muscle_mass"": 80.6, ""workout_type"": ""SHDR""}"
