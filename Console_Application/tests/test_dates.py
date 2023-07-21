@@ -1,23 +1,26 @@
+import datetime
+import pytest
 import unittest
 from unittest.mock import patch
-import pytest
 from diet_db.dates import \
     DatesTable, SetNewDate, SetNewDateID, DatabaseDateID, DatabaseDate, Dates, InsertDate
-import connection.client_server_connection as csc
-import datetime
+from connection.client_server_connection import ConnectionCredentials, Connection
 
 
 class DatesTestCases(unittest.TestCase):
 
-    pytest.credentials = csc.ConnectionCredentials()
-    pytest.connection = csc.Connection(
+    # Get connection to the database
+    pytest.credentials = ConnectionCredentials()
+    pytest.connection = Connection(
         pytest.credentials.get_username(),
         pytest.credentials.get_password()
     ).get_connection()
 
+    # Initialize the dates table
     pytest.dates_table = DatesTable(pytest.connection)
     pytest.dates_table.get_dates_table()
 
+    # Initialize the day for testing the new date
     pytest.day = '01'
 
     def test_get_dates_table(self):
@@ -71,7 +74,25 @@ class DatesTestCases(unittest.TestCase):
         )
 
     def test_get_meals_for_date(self):
+
+        """Test that the meals for the latest date are correct"""
+        # Need to adjust meals module to apply SOLID principles before this test can be written
         pass
+
+    @patch('builtins.input', return_value="y")
+    def test_add_date_to_db(self, mock_input):
+
+        """Test that the new date is added to the database"""
+
+        with unittest.mock.patch.object(
+                InsertDate, 'add_date_to_db', return_value=None
+        ) as mock_method:
+            date_entry = Dates(
+                SetNewDateID(pytest.dates_table.dates_table).set_new_date_id(),
+                SetNewDate(pytest.day).set_new_date()
+            )
+            InsertDate(date_entry.date_id, date_entry.date).add_date_to_db(pytest.connection)
+            mock_method.assert_called_once_with(pytest.connection)
 
 
 if __name__ == '__main__':
