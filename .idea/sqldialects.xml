@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/Console_Application/diet_db/foods.py" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/Console_Application/diet_db/meals.py" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/Console_Application/tests/test_dates.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Console_Application/tests/test_foods.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Console_Application/tests/test_meals.py" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/Queries/diet_MYSQL.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/Queries/diet_SQLITE.sql" dialect="GenericSQL" />
   </component>
