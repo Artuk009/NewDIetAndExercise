@@ -1,12 +1,11 @@
-from diet_db import foods as f
-from diet_db import meals as m
+from diet_db.meals import MealsTable, SetMeal, Meals
 from diet_db.dates import\
     Dates, InsertDate, DatabaseDate, DatabaseDateID, SetNewDate, SetNewDateID, DatesTable
-from connection.client_server_connection import \
-    ConnectionCredentials, Connection
+from diet_db.foods import FoodsTable, FoodCount, Foods, FoodMasterList
+from connection.client_server_connection import ConnectionCredentials, Connection
 
-# TODO: Adjust tests for dates module
-# TODO: Apply SOLID principles to meals module
+# TODO: Implement inserting the new food entries into the database
+# TODO: Continue updating tests.
 
 
 def main():
@@ -16,28 +15,42 @@ def main():
 
     # Chose an option to execute
     while True:
+
+        # Get connection to the database
         connection = Connection(
             credentials.get_username(),
             credentials.get_password()
         ).get_connection()
 
+        # Get the latest date and date id
+        current_date = Dates(
+            DatabaseDateID(connection).get_latest_date_id(),
+            DatabaseDate(connection).get_latest_date()
+        )
+
+        print("*" * 39)
+        print("* Working with entries for", current_date.date, "*")
+        print("*" * 39)
+
         choice = input("Select an option: \n"
                        "[1] View Latest Food Entries \n"
                        "[2] View Dates Table \n"
-                       "[3] Add Date to Update \n"
+                       "[3] Update the Date \n"
                        "[4] Log a New Food \n"
                        "[9] Exit \n")
 
         dates_table = DatesTable(connection)
         dates_table.get_dates_table()
-        meals_table = m.get_meals_table(
-            connection, DatabaseDateID(connection).get_latest_date_id()
-        )
+        meals_table = MealsTable(connection)
+        meals_table.get_meals_table(current_date.date_id)
+        foods_table = FoodsTable(connection)
+        foods_table.get_foods_table(connection, 5)
 
         match choice:
             case "1":
                 entry_number = input("Enter the number of entries to view: ")
-                f.get_latest_food_entries(connection, int(entry_number))
+                foods_table.get_foods_table(connection, int(entry_number))
+                foods_table.show_foods_table()
 
             case "2":
                 dates_table.show_dates_table()
@@ -52,13 +65,7 @@ def main():
                 InsertDate(date_entry.date_id, date_entry.date).add_date_to_db(connection)
 
             case "4":
-                # print(m.set_meal())
-                # print(f.get_current_foods_count(connection))
-                current_date = Dates(
-                    DatabaseDateID(connection).get_latest_date_id(),
-                    DatabaseDate(connection).get_latest_date()
-                )
-                current_date.get_meals_for_date(meals_table)
+                current_date.get_meals_for_date(meals_table.meals_table)
                 print(current_date)
 
             case "9":
