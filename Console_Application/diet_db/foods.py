@@ -1,49 +1,83 @@
-def get_latest_food_entries(connection, limit):
+class FoodsTable:
 
-    """Function to get the latest food entries from the database and print them to the console"""
+    """Class to create a foods table object"""
 
-    cursor = connection.cursor(buffered=True)
-    cursor.callproc("GetFoodsByMealAndDateFromFoods")
-    results = next(cursor.stored_results())
-    dataset = results.fetchmany(limit)
-    # Print the results
-    print("Latest 5 entries:")
-    print("_" * 93)
-    print("| {:<3} | {:<10} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} |".format(
-        'ID', 'Date', 'Meal', 'Food', 'S', 'Carb', 'Fats', 'Prot', 'Cals'
-    ))
-    print("_" * 93)
-    for data in dataset:
-        print("| {} | {} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} |".format(
-            data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8]))
-    print("_" * 93)
+    def __init__(self, connection):
+        self.connection = connection
+        self.limit = 5
+        self.foods_table = []
 
-    cursor.close()
+    def get_foods_table(self, connection, limit):
+
+        """Method to get the latest food entries from the database"""
+
+        cursor = connection.cursor(buffered=True)
+        cursor.callproc("GetFoodsByMealAndDateFromFoods")
+        results = next(cursor.stored_results())
+        dataset = results.fetchmany(limit)
+        for data in dataset:
+            self.foods_table.append(data)
+
+        cursor.close()
+        return self.foods_table
+
+    def show_foods_table(self):
+
+        """Method to show the foods table"""
+
+        print("Latest 5 entries:")
+        print("*" * 93)
+        print("* {:<3} | {:<10} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} *".format(
+            'ID', 'Date', 'Meal', 'Food', 'S', 'Carb', 'Fats', 'Prot', 'Cals'
+        ))
+        print("*" * 93)
+        for data in self.foods_table:
+            print("* {} | {} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} *".format(
+                data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8]))
+        print("*" * 93)
 
 
-def get_food_list_master(connection):
-    cursor = connection.cursor(buffered=True)
+class FoodMasterList:
 
-    """Function to get all foods from the food_list_master table and store the names in a list"""
+    """Class to create a food master list object"""
 
-    existing_foods = []
-    query = "SELECT food_name FROM food_list_master_json"
-    cursor.execute(query)
-    for food in cursor:
-        existing_foods.append(food[0])
-    cursor.close()
-    return existing_foods
+    def __init__(self, connection):
+        self.connection = connection
+        self.food_master_list = []
+
+    def get_food_master_list(self):
+
+        """Method to get the food master list from the database"""
+
+        cursor = self.connection.cursor(buffered=True)
+        query = "SELECT * FROM food_list_master_json"
+        cursor.execute(query)
+        results = cursor.fetchall()
+        for result in results:
+            self.food_master_list.append(result)
+        cursor.close()
+        return self.food_master_list
 
 
-def get_current_foods_count(connection):
+class FoodCount:
 
-    """Function to get the current foods from the database"""
+    """Class to create a food count object"""
 
-    cursor = connection.cursor(buffered=True)
-    cursor.execute("SELECT * FROM foods_json")
-    current_foods = cursor.fetchall()
-    cursor.close()
-    return len(current_foods)
+    def __init__(self, connection):
+        self.connection = connection
+        self.food_count = 0
+
+    def get_food_count(self):
+
+        """Method to get the food count from the database"""
+
+        cursor = self.connection.cursor(buffered=True)
+        cursor.execute("SELECT * FROM foods_json")
+        results = cursor.fetchall()
+        for result in results:
+            self.food_count += 1
+        cursor.close()
+        return self.food_count
 
 
 class Foods:
