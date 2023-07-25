@@ -34,5 +34,6 @@ class Connection:
         """Function to create a connection to the database"""
 
         connection = conn.connect(host="localhost", user=username, password=password, database="diet")
+        print()
         print("-------------Connected----------------")
         return connection
