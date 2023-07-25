@@ -60,7 +60,7 @@ class MyTestCase(unittest.TestCase):
     @patch('builtins.input', return_value="4")
     def test_set_snack(self, mock_input):
 
-        """Tests that the meal is set to snack"""
+        """Tests that the meal is set to Post-Workout"""
 
         self.assertEqual(pytest.meal.set_meal(), "Post-Workout")
 
