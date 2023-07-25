@@ -43,6 +43,21 @@ class SetMeal:
         return meal
 
 
+class GetMealID:
+
+    """Class to get the meal id"""
+
+    def __init__(self, meal_name, meals_table):
+        self.meal_name = meal_name
+        self.meals_table = meals_table
+
+    def get_meal_id(self):
+        for meal in self.meals_table:
+            if meal[2] == self.meal_name:
+                return meal[0]
+        return None
+
+
 class Meals:
     def __init__(self, meal_id, date_id, meal_name):
         self.meal_id = meal_id

@@ -25,6 +25,7 @@ class FoodsTable:
 
         """Method to show the foods table"""
 
+        print()
         print("Latest 5 entries:")
         print("*" * 93)
         print("* {:<3} | {:<10} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} *".format(
@@ -35,6 +36,7 @@ class FoodsTable:
             print("* {} | {} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} *".format(
                 data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8]))
         print("*" * 93)
+        print()
 
 
 class FoodMasterList:
@@ -57,6 +59,25 @@ class FoodMasterList:
             self.food_master_list.append(result)
         cursor.close()
         return self.food_master_list
+
+
+class GetNutritionInfo:
+
+    """Class to get the nutrition info for a food entry"""
+
+    def __init__(self, food_name, connection):
+        self.food_name = food_name
+        self.connection = connection
+
+    def get_nutrition_info(self):
+
+        """Method to get the nutrition info for a food entry"""
+
+        food_master_list = FoodMasterList(self.connection).get_food_master_list()
+        for food in food_master_list:
+            if food[1] == self.food_name:
+                return food[2]
+        return None
 
 
 class FoodCount:
@@ -92,4 +113,16 @@ class Foods:
         self.nutrition_info = nutrition_info
 
     def __str__(self):
-        return f"{self.food_name} - {self.nutrition_info}"
+        return f"{self.food_id} - {self.meal_id} - {self.food_name} - {self.nutrition_info}"
+
+    def add_food(self, connection):
+        cursor = connection.cursor(buffered=True)
+        new_food = (self.food_id, self.meal_id, self.food_name, self.servings, self.nutrition_info)
+        query = '''
+        INSERT INTO foods_json (id, meal_id, food_name, servings, nutrition_info)
+        VALUES (%s, %s, %s, %s, %s)
+        '''
+        cursor.execute(query, new_food)
+        connection.commit()
+        cursor.close()
+        print("Food inserted to database")

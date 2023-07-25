@@ -1,10 +1,10 @@
-from diet_db.meals import MealsTable, SetMeal, Meals
+from diet_db.meals import MealsTable, SetMeal, Meals, GetMealID
 from diet_db.dates import\
     Dates, InsertDate, DatabaseDate, DatabaseDateID, SetNewDate, SetNewDateID, DatesTable
-from diet_db.foods import FoodsTable, FoodCount, Foods, FoodMasterList
+from diet_db.foods import FoodsTable, FoodCount, Foods, FoodMasterList, GetNutritionInfo
 from connection.client_server_connection import ConnectionCredentials, Connection
 
-# TODO: Implement inserting the new food entries into the database
+# TODO: Add error handling for invalid input and db check
 # TODO: Continue updating tests.
 
 
@@ -28,9 +28,11 @@ def main():
             DatabaseDate(connection).get_latest_date()
         )
 
+        print()
         print("*" * 39)
         print("* Working with entries for", current_date.date, "*")
         print("*" * 39)
+        print()
 
         choice = input("Select an option: \n"
                        "[1] View Latest Food Entries \n"
@@ -44,7 +46,6 @@ def main():
         meals_table = MealsTable(connection)
         meals_table.get_meals_table(current_date.date_id)
         foods_table = FoodsTable(connection)
-        foods_table.get_foods_table(connection, 5)
 
         match choice:
             case "1":
@@ -65,8 +66,15 @@ def main():
                 InsertDate(date_entry.date_id, date_entry.date).add_date_to_db(connection)
 
             case "4":
-                current_date.get_meals_for_date(meals_table.meals_table)
-                print(current_date)
+                entry_id = FoodCount(connection).get_food_count() + 1
+                meal = SetMeal().set_meal()
+                entry_meal_id = GetMealID(meal, meals_table.meals_table).get_meal_id()
+                print(entry_meal_id)
+                entry_name = input("What food would you like to add? ")
+                entry_servings = input("How many servings? ")
+                entry_nutrition_info = GetNutritionInfo(entry_name, connection).get_nutrition_info()
+                entry = Foods(entry_id, entry_meal_id, entry_name, entry_servings, entry_nutrition_info)
+                entry.add_food(connection)
 
             case "9":
                 print("Exiting...")

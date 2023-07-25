@@ -26,13 +26,15 @@ class DatesTable:
         return self.dates_table
 
     def show_dates_table(self):
+        print()
         print("Dates Table:")
-        print("_" * 21)
-        print("| {:<4} | {:<10} |".format("ID", "Date"))
-        print("_" * 21)
+        print("*" * 21)
+        print("* {:<4} | {:<10} *".format("ID", "Date"))
+        print("*" * 21)
         for entry in self.dates_table:
-            print("| {:<4} | {} |".format(entry[0], entry[1]))
-        print("_" * 21)
+            print("* {:<4} | {} *".format(entry[0], entry[1]))
+        print("*" * 21)
+        print()
 
 
 class SetNewDate:
