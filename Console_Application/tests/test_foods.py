@@ -28,13 +28,13 @@ class FoodsTestCase(unittest.TestCase):
         f.nutrition_info->'$.fats' AS fats, f.nutrition_info->'$.proteins' AS proteins,
         f.nutrition_info->'$.calories' AS calories
         FROM meals m
-        INNER JOIN foods_json f on f.meal_id = m.id
+        INNER JOIN foods f on f.meal_id = m.id
         INNER JOIN dates_2023 d on d.id = m.date_id
         ORDER BY f.id DESC LIMIT 1;"""
         cursor.execute(query)
         latest_food = cursor.fetchone()
         cursor.close()
-        self.assertEqual(pytest.foods_table.foods_table[0], latest_food)
+        self.assertEqual(pytest.foods_table.foods_table[-1], latest_food)
 
     def test_get_food_master_list(self):
 

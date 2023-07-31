@@ -52,7 +52,7 @@ class FoodMasterList:
         """Method to get the food master list from the database"""
 
         cursor = self.connection.cursor(buffered=True)
-        query = "SELECT * FROM food_list_master_json"
+        query = "SELECT * FROM food_list_master"
         cursor.execute(query)
         results = cursor.fetchall()
         for result in results:
@@ -93,7 +93,7 @@ class FoodCount:
         """Method to get the food count from the database"""
 
         cursor = self.connection.cursor(buffered=True)
-        cursor.execute("SELECT * FROM foods_json")
+        cursor.execute("SELECT * FROM foods")
         results = cursor.fetchall()
         for result in results:
             self.food_count += 1
