@@ -100,6 +100,18 @@ class FoodCount:
         cursor.close()
         return self.food_count
 
+    def get_food_list_master_count(self):
+
+        """Method to get the food count from the database"""
+
+        cursor = self.connection.cursor(buffered=True)
+        cursor.execute("SELECT * FROM food_list_master")
+        results = cursor.fetchall()
+        for result in results:
+            self.food_count += 1
+        cursor.close()
+        return self.food_count
+
 
 class Foods:
 
@@ -110,6 +122,11 @@ class Foods:
         self.meal_id = meal_id
         self.food_name = food_name
         self.servings = servings
+        self.nutrition_info = nutrition_info
+
+    def __init__(self, food_id, food_name, nutrition_info):
+        self.food_id = food_id
+        self.food_name = food_name
         self.nutrition_info = nutrition_info
 
     def __str__(self):
@@ -123,6 +140,18 @@ class Foods:
         VALUES (%s, %s, %s, %s, %s)
         '''
         cursor.execute(query, new_food)
+        connection.commit()
+        cursor.close()
+        print("Food inserted to database")
+
+    def add_food_to_food_list_master(self, connection):
+        cursor = connection.cursor(buffered=True)
+        new_food_master_entry = (self.food_id, self.food_name, self.nutrition_info)
+        query = '''
+        INSERT INTO food_list_master(id, food_name, nutrition_info)
+        VALUES (%s, %s, %s)
+        '''
+        cursor.execute(query, new_food_master_entry)
         connection.commit()
         cursor.close()
         print("Food inserted to database")

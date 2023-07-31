@@ -4,6 +4,8 @@ from diet_db.dates import\
 from diet_db.foods import FoodsTable, FoodCount, Foods, FoodMasterList, GetNutritionInfo
 from connection.client_server_connection import ConnectionCredentials, Connection
 
+import json as j
+
 # TODO: Add error handling for invalid input and db check
 # TODO: Continue updating tests.
 
@@ -39,6 +41,7 @@ def main():
                        "[2] View Dates Table \n"
                        "[3] Update the Date \n"
                        "[4] Log a New Food \n"
+                       "[5] Add a New Food to the Food Master List \n"
                        "[9] Exit \n")
 
         dates_table = DatesTable(connection)
@@ -70,10 +73,28 @@ def main():
                 meal = SetMeal().set_meal()
                 entry_meal_id = GetMealID(meal, meals_table.meals_table).get_meal_id()
                 entry_name = input("What food would you like to add? ")
+
+                if entry_name not in FoodMasterList(connection).get_food_master_list():
+                    print("That food is not in the master list. Please add it to the master list.")
+                    continue
+
                 entry_servings = input("How many servings? ")
                 entry_nutrition_info = GetNutritionInfo(entry_name, connection).get_nutrition_info()
                 entry = Foods(entry_id, entry_meal_id, entry_name, entry_servings, entry_nutrition_info)
                 entry.add_food(connection)
+
+            case "5":
+                entry_id = FoodCount(connection).get_food_list_master_count() + 1
+                entry_name = input("What food would you like to add to teh master list? ")
+                fats = int(input("How many g of fats? "))
+                carbs = int(input("How many g of carbs? "))
+                calories = int(input("How many calories? "))
+                protein = int(input("How many g of protein? "))
+                entry_nutrition_info = j.dumps(
+                    {"fats": fats, "carbs": carbs, "calories": calories, "protein": protein}
+                )
+                entry = Foods(entry_id, entry_name, entry_nutrition_info)
+                entry.add_food_to_food_list_master(connection)
 
             case "9":
                 print("Exiting...")
