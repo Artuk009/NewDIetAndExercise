@@ -1,4 +1,4 @@
-,id,date_id,body_measurements
+,id,date_id,measurements
 0,1,1,"{""body_fat"": 28.1, ""fat_mass"": 55.0, ""body_weight"": 195, ""muscle_mass"": 76.1, ""workout_type"": ""BACK""}"
 1,2,2,"{""body_fat"": 24.5, ""fat_mass"": 48.1, ""body_weight"": 196, ""muscle_mass"": 81.0, ""workout_type"": ""REST""}"
 2,3,3,"{""body_fat"": 25.1, ""fat_mass"": 49.3, ""body_weight"": 196, ""muscle_mass"": 80.3, ""workout_type"": ""REST""}"
@@ -23,6 +23,4 @@
 21,22,27,"{""body_fat"": 23.8, ""fat_mass"": 46.0, ""body_weight"": 193.2, ""muscle_mass"": 80.6, ""workout_type"": ""SHDR""}"
 22,23,28,"{""body_fat"": 24.8, ""fat_mass"": 48.6, ""body_weight"": 195.8, ""muscle_mass"": 80.4, ""workout_type"": ""REST""}"
 23,24,30,"{""body_fat"": 25.0, ""fat_mass"": 49.1, ""body_weight"": 196.4, ""muscle_mass"": 80.4, ""workout_type"": ""REST""}"
-24,25,31,"{""body_fat"": 25.0, ""fat_mass"": 48.7, ""body_weight"": 194.8, ""muscle_mass"": 79.7, ""workout_type"": ""CHST""}"
-25,26,32,"{""body_fat"": 24.6, ""fat_mass"": 48.2, ""body_weight"": 195.8, ""muscle_mass"": 80.7, ""workout_type"": ""REST""}"
-27,27,34,"{""body_fat"": 25.7, ""fat_mass"": 50.8, ""body_weight"": 197.8, ""muscle_mass"": 80.1, ""workout_type"": ""REST""}"
+25,25,31,"{""body_fat"": 25.9, ""fat_mass"": 51.1, ""body_weight"": 197.6, ""muscle_mass"": 79.8, ""workout_type"": ""REST""}"

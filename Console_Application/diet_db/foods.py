@@ -33,7 +33,7 @@ class FoodsTable:
         ))
         print("*" * 93)
         for data in self.foods_table:
-            print("* {} | {} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} *".format(
+            print("* {:<3} | {} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} *".format(
                 data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8]))
         print("*" * 93)
         print()

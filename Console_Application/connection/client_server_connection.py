@@ -5,8 +5,8 @@ class ConnectionCredentials:
 
     """Class to get the credentials for the database"""
 
-    sql_username = 'diet_editor'
-    sql_password = 'diet_password'
+    sql_username = 'generic_user'
+    sql_password = 'generic_password'
 
     def __init__(self):
         self.username = ConnectionCredentials.sql_username
