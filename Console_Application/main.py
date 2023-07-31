@@ -69,7 +69,6 @@ def main():
                 entry_id = FoodCount(connection).get_food_count() + 1
                 meal = SetMeal().set_meal()
                 entry_meal_id = GetMealID(meal, meals_table.meals_table).get_meal_id()
-                print(entry_meal_id)
                 entry_name = input("What food would you like to add? ")
                 entry_servings = input("How many servings? ")
                 entry_nutrition_info = GetNutritionInfo(entry_name, connection).get_nutrition_info()

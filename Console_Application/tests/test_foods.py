@@ -34,7 +34,7 @@ class FoodsTestCase(unittest.TestCase):
         cursor.execute(query)
         latest_food = cursor.fetchone()
         cursor.close()
-        self.assertEqual(pytest.foods_table.foods_table[-1], latest_food)
+        self.assertEqual(pytest.foods_table.foods_table[0], latest_food)
 
     def test_get_food_master_list(self):
 

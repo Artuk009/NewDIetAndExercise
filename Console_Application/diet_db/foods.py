@@ -119,7 +119,7 @@ class Foods:
         cursor = connection.cursor(buffered=True)
         new_food = (self.food_id, self.meal_id, self.food_name, self.servings, self.nutrition_info)
         query = '''
-        INSERT INTO foods_json (id, meal_id, food_name, servings, nutrition_info)
+        INSERT INTO foods(id, meal_id, food_name, servings, nutrition_info)
         VALUES (%s, %s, %s, %s, %s)
         '''
         cursor.execute(query, new_food)
