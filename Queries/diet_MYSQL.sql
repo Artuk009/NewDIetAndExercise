@@ -71,7 +71,7 @@ SELECT f.id, d.date, m.meal, f.food_name, f.servings, f.nutrition_info->'$.carbs
        f.nutrition_info->'$.fats' AS fats, f.nutrition_info->'$.proteins' AS proteins,
        f.nutrition_info->'$.calories' AS calories
 FROM meals m
-INNER JOIN foods_json f on f.meal_id = m.id
+INNER JOIN foods f on f.meal_id = m.id
 INNER JOIN dates_2023 d on d.id = m.date_id
 ORDER BY f.id;
 
@@ -94,7 +94,7 @@ DELIMITER //
 CREATE PROCEDURE GetFoodInfoFromFoodListMaster(foodName VARCHAR(255))
 BEGIN
     SELECT food_name, nutrition_info
-    FROM food_list_master_json
+    FROM food_list_master
     WHERE food_name = foodName;
 END //
 DELIMITER ;
@@ -103,10 +103,10 @@ CALL GetFoodInfoFromFoodListMaster('Ramen');
 
 -- Create procedure to get all body measurements json for all dates
 CREATE PROCEDURE GetBodyMeasurementsByDate()
-SELECT b.id, d.date, b.body_measurements->'$.body_weight' AS body_weight,
-       b.body_measurements->'$.body_fat' AS body_fat, b.body_measurements->'$.muscle_mass' AS muscle_mass,
-       b.body_measurements->'$.fat_mass' AS fat_mass, b.body_measurements->'$.workout_type' AS workout_type
-FROM body_measurements_json b
+SELECT b.id, d.date, b.measurements->'$.body_weight' AS body_weight,
+       b.measurements->'$.body_fat' AS body_fat, b.measurements->'$.muscle_mass' AS muscle_mass,
+       b.measurements->'$.fat_mass' AS fat_mass, b.measurements->'$.workout_type' AS workout_type
+FROM body_measurements b
 INNER JOIN dates_2023 d on d.id = b.date_id
 ORDER BY b.id;
 
