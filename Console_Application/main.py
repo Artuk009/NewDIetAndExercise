@@ -8,6 +8,7 @@ import json as j
 
 # TODO: Add error handling for invalid input and db check
 # TODO: Continue updating tests.
+# TODO: Switch to AWS RDS database.
 
 
 def main():
