@@ -12,7 +12,7 @@ before I begin the development of the applications.
 * The MySQL database is connected via the AWS RDS servers for portability across devices.
 
 ### Console Application (Work in Progress)
-* <a href="https://github.com/Artuk009/NewDIetAndExercise/tree/b2cc8f0e31b921dee4c4c3d52a24a3e775cc2959/Console_Application">Console Application</a> :
+* <a href="Console_Application">Console Application</a> :
 This is the implementation of the MySQL database structure that I designed in the analysis section. I am in the process
 of converting the Pandas layout to a MySQL connector based application which should translate better to a web application.
 I have been implementing unit testing as I go along to ensure that the application is working as intended with the 
