@@ -1,144 +1,327 @@
-,id,meal_id,food_name,servings,carbs,fats,proteins,calories
-0,1,1,Ramen,1.0,54,14,8,370
-1,2,1,Chips 1oz,1.0,15,10,2,160
-2,3,1,Protein Powder,2.0,3,2,24,120
-3,4,2,Rice,1.0,45,1,4,206
-4,5,2,Spicy Garlic,1.0,3,6,1,70
-5,6,3,Fruit Snacks,1.0,17,0,1,70
-6,7,3,Rice Krispie,1.0,17,2,0,90
-7,8,3,Cereal Bar,1.0,24,3,1,130
-8,9,3,Rice,1.0,45,1,4,206
-9,10,3,Spicy Garlic,1.0,3,6,1,70
-10,11,3,Protein Powder,2.0,3,2,24,120
-11,12,4,McChicken,2.0,39,21,14,400
-12,13,4,Protein Powder,2.0,3,2,24,120
-13,14,5,Ramen,1.0,54,14,8,370
-14,15,5,Chips 1oz,1.0,15,10,2,160
-15,16,5,Protein Powder,2.0,3,2,24,120
-16,17,6,Rice,1.0,45,1,4,206
-17,18,6,Spicy Garlic,1.0,3,6,1,70
-18,19,7,Fruit Snacks,1.0,17,0,1,70
-19,20,7,Rice Krispie,1.0,17,2,0,90
-20,21,7,Cereal Bar,1.0,24,3,1,130
-21,22,7,Rice,1.0,45,1,4,206
-22,23,8,Spicy Garlic,1.0,3,6,1,70
-23,24,8,Protein Powder,2.0,3,2,24,120
-24,25,9,McChicken,2.0,39,21,14,400
-25,26,9,Protein Powder,2.0,3,2,24,120
-26,27,10,Ramen,1.0,54,14,8,370
-27,28,10,Protein Powder,2.0,3,2,24,120
-28,29,10,Chips 1oz,1.0,15,10,2,160
-29,30,11,10 Traditional Wings,1.0,0,41,88,720
-30,31,11,Wendys Jr Fries,1.0,28,9,3,210
-31,32,11,Ranch,1.0,1,23,1,210
-32,33,12,Rice,1.0,45,1,4,206
-33,34,12,Spicy Garlic,1.0,3,6,1,70
-34,35,12,Fruit Snacks,1.0,17,0,1,70
-35,36,12,Protein Powder,2.0,3,2,24,120
-36,37,13,Chewy Bar,2.0,18,3,1,100
-37,38,13,Oatmeal,2.0,32,3,9,160
-38,39,13,Protein Powder,2.0,3,2,24,120
-39,40,14,Chuck Steak 100g,3.0,0,20,25,277
-40,41,14,Rice,2.0,45,1,4,206
-41,42,14,Spicy Garlic,2.0,3,6,1,70
-42,43,15,Gordita Crunch,1.0,41,28,20,490
-43,44,15,Steak Ques.,1.0,42,27,26,520
-44,45,15,Gatorade Powder,2.0,22,0,0,80
-45,46,16,Ice Cream Sandwich,2.0,26,5,2,160
-46,47,16,Fruit Snacks,1.0,17,0,1,70
-47,48,17,Cereal Bar,2.0,24,3,1,130
-48,49,17,Protein Powder,2.0,3,2,24,120
-49,50,18,Rice,1.0,45,1,4,206
-50,51,18,Spicy Garlic,1.0,3,6,1,70
-51,52,18,Eggs,4.0,0,5,6,70
-52,53,18,Butter,1.0,0,11,0,100
-53,54,19,Rice,1.0,45,1,4,206
-54,55,19,Spicy Garlic,1.0,3,6,1,70
-55,56,19,Protein Powder,2.0,3,2,24,120
-56,57,19,Fruit Snacks,2.0,17,0,1,70
-57,58,20,Pop Tart,1.0,74,9,3,390
-58,59,20,Protein Powder,2.0,3,2,24,120
-59,60,21,Oatmeal,2.0,32,3,9,160
-60,61,21,Cereal Bar,2.0,24,3,1,130
-61,62,21,Protein Powder,2.0,3,2,24,120
-62,63,22,Rice,2.0,45,1,4,206
-63,64,22,Protein Powder,2.0,3,2,24,120
-64,65,22,Butter,1.0,0,11,0,100
-65,66,23,Quarter Pounder,2.0,42,26,30,520
-66,67,23,Gatorade Powder,2.0,22,0,0,80
-67,68,24,Ice Cream Sandwich,1.0,26,5,2,160
-68,69,24,Protein Powder,2.0,3,2,24,120
-69,70,25,Ramen,1.0,54,14,8,370
-70,71,25,Protein Powder,2.0,3,2,24,120
-71,72,26,Gyro,1.0,73,12,44,593
-72,73,26,Wendys Jr Fries,2.0,28,9,3,210
-73,74,27,Rice,1.0,45,1,4,206
-74,75,27,Spicy Garlic,2.0,3,6,1,70
-75,76,27,Protein Powder,2.0,3,2,24,120
-76,77,28,Ice Cream Sandwich,1.0,26,5,2,160
-77,78,28,Fruit Snacks,1.0,17,0,1,70
-78,79,29,Oatmeal,2.0,32,3,9,160
-79,80,29,Cereal Bar,2.0,24,3,1,130
-80,81,29,Protein Powder,2.0,3,2,24,120
-81,82,30,Quarter Pounder,2.0,42,26,30,520
-82,83,31,Gatorade Powder,2.0,22,0,0,80
-83,84,31,Protein Powder,2.0,3,2,24,120
-84,85,31,Ice Cream Sandwich,2.0,26,5,2,160
-85,86,32,Gordita Crunch,1.0,41,28,20,490
-86,87,32,Steak Ques.,1.0,42,27,26,520
-87,88,32,LG Baja Blast,1.0,111,0,0,420
-88,89,33,Ramen,1.0,54,14,8,370
-89,90,33,Protein Powder,2.0,3,2,24,120
-90,91,34,Gordita Crunch,2.0,41,28,20,490
-91,92,35,Gordita Crunch,1.0,41,28,20,490
-92,93,35,Fruit Snacks,1.0,17,0,1,70
-93,94,36,Protein Powder,2.0,3,2,24,120
-94,95,36,Fruit Snacks,1.0,17,0,1,70
-95,96,37,Cereal Bar,1.0,24,3,1,130
-96,97,37,Chewy Bar,1.0,18,3,1,100
-97,98,37,Hot Dog,2.0,1,12,5,140
-98,99,37,Hot Dog Bun,2.0,23,1,4,130
-99,100,37,Chips 1oz,1.0,15,10,2,160
-100,101,38,Protein Powder,2.0,3,2,24,120
-101,102,38,Pop Tart,1.0,74,9,3,390
-102,103,39,Quesadilla (restaurant),1.0,110,65,73,1332
-103,104,39,Small Coke,1.0,39,0,0,150
-104,105,40,Protein Powder,2.0,3,2,24,120
-105,106,40,Fruit Snacks,1.0,17,0,1,70
-106,107,41,Cereal Bar,1.0,24,3,1,130
-107,108,41,Ramen,1.0,54,14,8,370
-108,109,41,Protein Powder,2.0,3,2,24,120
-109,110,42,Rice,1.0,45,1,4,206
-110,111,42,Protein Powder,2.0,3,2,24,120
-111,112,43,Watermelon,1.0,21,0,2,85
-112,113,43,Chewy Bar,1.0,18,3,1,100
-113,114,43,Protein Powder,2.0,3,2,24,120
-114,115,44,Protein Powder,2.0,3,2,24,120
-115,116,44,Rice,2.0,45,1,4,206
-116,117,44,Spicy Garlic,1.0,3,6,1,70
-117,118,44,Ice Cream Sandwich,2.0,26,5,2,160
-118,119,45,Chewy Bar,2.0,18,3,1,100
-119,120,45,Oatmeal,3.0,32,3,9,160
-120,121,45,Protein Powder,2.0,3,2,24,120
-121,122,46,Quarter Pounder,2.0,42,26,30,520
-122,123,47,Protein Powder,2.0,3,2,24,120
-123,124,47,Pop Tart,1.0,74,9,3,390
-124,125,48,McChicken,1.0,39,21,14,400
-125,126,48,Wendys Jr Fries,1.0,28,9,3,210
-126,127,49,Chewy Bar,2.0,18,3,1,100
-127,128,49,Oatmeal,3.0,32,3,9,160
-128,129,49,Protein Powder,2.0,3,2,24,120
-129,130,50,Ice Cream Sandwich,2.0,26,5,2,160
-130,131,50,Protein Powder,2.0,3,2,24,120
-131,132,50,Gatorade Powder,1.0,22,0,0,80
-132,133,51,Quarter Pounder,2.0,42,26,30,520
-133,134,52,Pop Tart,1.0,74,9,3,390
-134,135,52,Rice,2.0,45,1,4,206
-135,136,52,Spicy Garlic,2.0,3,6,1,70
-136,137,52,Protein Powder,1.0,3,2,24,120
-137,138,69,Ramen,1.0,54,14,8,370
-138,139,69,Protein Powder,2.0,3,2,24,120
-139,140,69,Cereal Bar,1.0,24,3,1,130
-140,141,70,Hot Dog,2.0,1,12,5,140
-141,142,70,Hot Dog Bun,2.0,23,1,4,130
-142,143,70,Chips 1oz,1.0,15,10,2,160
+id,meal_id,food_name,servings,nutrition_info
+1,1,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+2,1,Chips 1oz,1,"{""fats"": 10, ""carbs"": 15, ""calories"": 160, ""proteins"": 2}"
+3,1,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+4,2,Rice,1,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+5,2,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+6,3,Fruit Snacks,1,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+7,3,Rice Krispie,1,"{""fats"": 2, ""carbs"": 17, ""calories"": 90, ""proteins"": 0}"
+8,3,Cereal Bar,1,"{""fats"": 3, ""carbs"": 24, ""calories"": 130, ""proteins"": 1}"
+9,3,Rice,1,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+10,3,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+11,3,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+12,4,McChicken,2,"{""fats"": 21, ""carbs"": 39, ""calories"": 400, ""proteins"": 14}"
+13,4,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+14,5,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+15,5,Chips 1oz,1,"{""fats"": 10, ""carbs"": 15, ""calories"": 160, ""proteins"": 2}"
+16,5,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+17,6,Rice,1,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+18,6,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+19,7,Fruit Snacks,1,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+20,7,Rice Krispie,1,"{""fats"": 2, ""carbs"": 17, ""calories"": 90, ""proteins"": 0}"
+21,7,Cereal Bar,1,"{""fats"": 3, ""carbs"": 24, ""calories"": 130, ""proteins"": 1}"
+22,7,Rice,1,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+23,8,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+24,8,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+25,9,McChicken,2,"{""fats"": 21, ""carbs"": 39, ""calories"": 400, ""proteins"": 14}"
+26,9,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+27,10,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+28,10,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+29,10,Chips 1oz,1,"{""fats"": 10, ""carbs"": 15, ""calories"": 160, ""proteins"": 2}"
+30,11,10 Traditional Wings,1,"{""fats"": 41, ""carbs"": 0, ""calories"": 720, ""proteins"": 88}"
+31,11,Wendys Jr Fries,1,"{""fats"": 9, ""carbs"": 28, ""calories"": 210, ""proteins"": 3}"
+32,11,Ranch,1,"{""fats"": 23, ""carbs"": 1, ""calories"": 210, ""proteins"": 1}"
+33,12,Rice,1,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+34,12,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+35,12,Fruit Snacks,1,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+36,12,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+37,13,Chewy Bar,2,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+38,13,Oatmeal,2,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+39,13,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+40,14,Chuck Steak 100g,3,"{""fats"": 20, ""carbs"": 0, ""calories"": 277, ""proteins"": 25}"
+41,14,Rice,2,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+42,14,Spicy Garlic,2,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+43,15,Gordita Crunch,1,"{""fats"": 28, ""carbs"": 41, ""calories"": 490, ""proteins"": 20}"
+44,15,Steak Ques.,1,"{""fats"": 27, ""carbs"": 42, ""calories"": 520, ""proteins"": 26}"
+45,15,Gatorade Powder,2,"{""fats"": 0, ""carbs"": 22, ""calories"": 80, ""proteins"": 0}"
+46,16,Ice Cream Sandwich,2,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+47,16,Fruit Snacks,1,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+48,17,Cereal Bar,2,"{""fats"": 3, ""carbs"": 24, ""calories"": 130, ""proteins"": 1}"
+49,17,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+50,18,Rice,1,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+51,18,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+52,18,Eggs,4,"{""fats"": 5, ""carbs"": 0, ""calories"": 70, ""proteins"": 6}"
+53,18,Butter,1,"{""fats"": 11, ""carbs"": 0, ""calories"": 100, ""proteins"": 0}"
+54,19,Rice,1,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+55,19,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+56,19,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+57,19,Fruit Snacks,2,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+58,20,Pop Tart,1,"{""fats"": 9, ""carbs"": 74, ""calories"": 390, ""proteins"": 3}"
+59,20,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+60,21,Oatmeal,2,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+61,21,Cereal Bar,2,"{""fats"": 3, ""carbs"": 24, ""calories"": 130, ""proteins"": 1}"
+62,21,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+63,22,Rice,2,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+64,22,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+65,22,Butter,1,"{""fats"": 11, ""carbs"": 0, ""calories"": 100, ""proteins"": 0}"
+66,23,Quarter Pounder,2,"{""fats"": 26, ""carbs"": 42, ""calories"": 520, ""proteins"": 30}"
+67,23,Gatorade Powder,2,"{""fats"": 0, ""carbs"": 22, ""calories"": 80, ""proteins"": 0}"
+68,24,Ice Cream Sandwich,1,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+69,24,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+70,25,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+71,25,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+72,26,Gyro,1,"{""fats"": 12, ""carbs"": 73, ""calories"": 593, ""proteins"": 44}"
+73,26,Wendys Jr Fries,2,"{""fats"": 9, ""carbs"": 28, ""calories"": 210, ""proteins"": 3}"
+74,27,Rice,1,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+75,27,Spicy Garlic,2,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+76,27,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+77,28,Ice Cream Sandwich,1,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+78,28,Fruit Snacks,1,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+79,29,Oatmeal,2,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+80,29,Cereal Bar,2,"{""fats"": 3, ""carbs"": 24, ""calories"": 130, ""proteins"": 1}"
+81,29,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+82,30,Quarter Pounder,2,"{""fats"": 26, ""carbs"": 42, ""calories"": 520, ""proteins"": 30}"
+83,31,Gatorade Powder,2,"{""fats"": 0, ""carbs"": 22, ""calories"": 80, ""proteins"": 0}"
+84,31,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+85,31,Ice Cream Sandwich,2,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+86,32,Gordita Crunch,1,"{""fats"": 28, ""carbs"": 41, ""calories"": 490, ""proteins"": 20}"
+87,32,Steak Ques.,1,"{""fats"": 27, ""carbs"": 42, ""calories"": 520, ""proteins"": 26}"
+88,32,LG Baja Blast,1,"{""fats"": 0, ""carbs"": 111, ""calories"": 420, ""proteins"": 0}"
+89,33,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+90,33,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+91,34,Gordita Crunch,2,"{""fats"": 28, ""carbs"": 41, ""calories"": 490, ""proteins"": 20}"
+92,35,Gordita Crunch,1,"{""fats"": 28, ""carbs"": 41, ""calories"": 490, ""proteins"": 20}"
+93,35,Fruit Snacks,1,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+94,36,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+95,36,Fruit Snacks,1,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+96,37,Cereal Bar,1,"{""fats"": 3, ""carbs"": 24, ""calories"": 130, ""proteins"": 1}"
+97,37,Chewy Bar,1,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+98,37,Hot Dog,2,"{""fats"": 12, ""carbs"": 1, ""calories"": 140, ""proteins"": 5}"
+99,37,Hot Dog Bun,2,"{""fats"": 1, ""carbs"": 23, ""calories"": 130, ""proteins"": 4}"
+100,37,Chips 1oz,1,"{""fats"": 10, ""carbs"": 15, ""calories"": 160, ""proteins"": 2}"
+101,38,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+102,38,Pop Tart,1,"{""fats"": 9, ""carbs"": 74, ""calories"": 390, ""proteins"": 3}"
+103,39,Quesadilla (restaurant),1,"{""fats"": 65, ""carbs"": 110, ""calories"": 1332, ""proteins"": 73}"
+104,39,Small Coke,1,"{""fats"": 0, ""carbs"": 39, ""calories"": 150, ""proteins"": 0}"
+105,40,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+106,40,Fruit Snacks,1,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+107,41,Cereal Bar,1,"{""fats"": 3, ""carbs"": 24, ""calories"": 130, ""proteins"": 1}"
+108,41,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+109,41,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+110,42,Rice,1,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+111,42,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+112,43,Watermelon,1,"{""fats"": 0, ""carbs"": 21, ""calories"": 85, ""proteins"": 2}"
+113,43,Chewy Bar,1,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+114,43,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+115,44,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+116,44,Rice,2,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+117,44,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+118,44,Ice Cream Sandwich,2,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+119,45,Chewy Bar,2,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+120,45,Oatmeal,3,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+121,45,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+122,46,Quarter Pounder,2,"{""fats"": 26, ""carbs"": 42, ""calories"": 520, ""proteins"": 30}"
+123,47,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+124,47,Pop Tart,1,"{""fats"": 9, ""carbs"": 74, ""calories"": 390, ""proteins"": 3}"
+125,48,McChicken,1,"{""fats"": 21, ""carbs"": 39, ""calories"": 400, ""proteins"": 14}"
+126,48,Wendys Jr Fries,1,"{""fats"": 9, ""carbs"": 28, ""calories"": 210, ""proteins"": 3}"
+127,49,Chewy Bar,2,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+128,49,Oatmeal,3,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+129,49,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+130,50,Ice Cream Sandwich,2,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+131,50,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+132,50,Gatorade Powder,1,"{""fats"": 0, ""carbs"": 22, ""calories"": 80, ""proteins"": 0}"
+133,51,Quarter Pounder,2,"{""fats"": 26, ""carbs"": 42, ""calories"": 520, ""proteins"": 30}"
+134,52,Pop Tart,1,"{""fats"": 9, ""carbs"": 74, ""calories"": 390, ""proteins"": 3}"
+135,52,Rice,2,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+136,52,Spicy Garlic,2,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+137,52,Protein Powder,1,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+138,69,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+139,69,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+140,69,Cereal Bar,1,"{""fats"": 3, ""carbs"": 24, ""calories"": 130, ""proteins"": 1}"
+141,70,Hot Dog,2,"{""fats"": 12, ""carbs"": 1, ""calories"": 140, ""proteins"": 5}"
+142,70,Hot Dog Bun,2,"{""fats"": 1, ""carbs"": 23, ""calories"": 130, ""proteins"": 4}"
+143,70,Chips 1oz,1,"{""fats"": 10, ""carbs"": 15, ""calories"": 160, ""proteins"": 2}"
+144,71,Pop Tart,1,"{""fats"": 9, ""carbs"": 74, ""calories"": 390, ""proteins"": 3}"
+145,71,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+146,72,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+147,72,Rice,1,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+148,72,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+149,73,Chewy Bar,1,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+150,73,Fruit Snacks,1,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+151,73,Oatmeal,2,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+152,73,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+153,74,Gatorade Powder,2,"{""fats"": 0, ""carbs"": 22, ""calories"": 80, ""proteins"": 0}"
+154,74,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+155,74,Ice Cream Sandwich,1,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+156,74,Fruit Snacks,2,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+157,75,Rice,2,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+158,75,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+159,75,Pork Brat,2,"{""fats"": 21, ""carbs"": 2, ""calories"": 260, ""proteins"": 14}"
+160,76,Cereal Bar,1,"{""fats"": 3, ""carbs"": 24, ""calories"": 130, ""proteins"": 1}"
+161,76,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+162,76,Rice,1,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+163,76,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+164,76,Fruit Snacks,2,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+165,77,Pork Bacon,4,"{""fats"": 7, ""carbs"": 0, ""calories"": 90, ""proteins"": 7}"
+166,77,Eggs,2,"{""fats"": 5, ""carbs"": 0, ""calories"": 70, ""proteins"": 6}"
+167,77,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+168,78,Gordita Crunch,1,"{""fats"": 28, ""carbs"": 41, ""calories"": 490, ""proteins"": 20}"
+169,78,Steak Ques.,1,"{""fats"": 27, ""carbs"": 42, ""calories"": 520, ""proteins"": 26}"
+170,78,LG Baja Blast,1,"{""fats"": 0, ""carbs"": 111, ""calories"": 420, ""proteins"": 0}"
+171,79,Protein Powder,4,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+172,81,Chewy Bar,2,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+173,81,Oatmeal,3,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+174,81,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+175,82,Pork Bacon,1,"{""fats"": 7, ""carbs"": 0, ""calories"": 90, ""proteins"": 7}"
+176,82,Sausage Links,2,"{""fats"": 13, ""carbs"": 2, ""calories"": 170, ""proteins"": 10}"
+177,82,Rice,2,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+178,82,Spicy Garlic,2,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+179,82,Eggs,2,"{""fats"": 5, ""carbs"": 0, ""calories"": 70, ""proteins"": 6}"
+180,83,Wendys Small Coke,1,"{""fats"": 0, ""carbs"": 66, ""calories"": 240, ""proteins"": 0}"
+181,83,Dave Double,1,"{""fats"": 57, ""carbs"": 39, ""calories"": 888, ""proteins"": 54}"
+182,83,Gatorade Powder,2,"{""fats"": 0, ""carbs"": 22, ""calories"": 80, ""proteins"": 0}"
+183,83,Ice Cream Sandwich,1,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+184,85,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+185,85,Pork Bacon,4,"{""fats"": 7, ""carbs"": 0, ""calories"": 90, ""proteins"": 7}"
+186,85,Eggs,2,"{""fats"": 5, ""carbs"": 0, ""calories"": 70, ""proteins"": 6}"
+187,86,Steak Ques.,1,"{""fats"": 27, ""carbs"": 42, ""calories"": 520, ""proteins"": 26}"
+188,87,Steak Ques.,1,"{""fats"": 27, ""carbs"": 42, ""calories"": 520, ""proteins"": 26}"
+189,87,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+190,88,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+191,88,Rice Krispie,2,"{""fats"": 2, ""carbs"": 17, ""calories"": 90, ""proteins"": 0}"
+192,89,Oatmeal,3,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+193,89,Chewy Bar,2,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+194,89,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+195,90,Ice Cream Sandwich,1,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+196,90,Gatorade Powder,2,"{""fats"": 0, ""carbs"": 22, ""calories"": 80, ""proteins"": 0}"
+197,90,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+198,91,Wendys Jr Fries,3,"{""fats"": 9, ""carbs"": 28, ""calories"": 210, ""proteins"": 3}"
+199,91,Super Big Boy,1,"{""fats"": 84, ""carbs"": 35, ""calories"": 1190, ""proteins"": 63}"
+200,93,Eggs,3,"{""fats"": 5, ""carbs"": 0, ""calories"": 70, ""proteins"": 6}"
+201,93,Sausage Links,2,"{""fats"": 13, ""carbs"": 2, ""calories"": 170, ""proteins"": 10}"
+202,93,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+203,94,Steak Ques.,1,"{""fats"": 27, ""carbs"": 42, ""calories"": 520, ""proteins"": 26}"
+204,95,Starbucks White Mocha,1,"{""fats"": 3, ""carbs"": 31, ""calories"": 210, ""proteins"": 9}"
+205,95,Steak Ques.,1,"{""fats"": 27, ""carbs"": 42, ""calories"": 520, ""proteins"": 26}"
+206,96,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+207,96,Rice Krispie,1,"{""fats"": 2, ""carbs"": 17, ""calories"": 90, ""proteins"": 0}"
+208,96,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+209,97,Chewy Bar,2,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+210,97,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+211,97,Oatmeal,3,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+212,98,Ice Cream Sandwich,2,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+213,98,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+214,98,Gatorade Powder,2,"{""fats"": 0, ""carbs"": 22, ""calories"": 80, ""proteins"": 0}"
+215,99,Pork Chop,2,"{""fats"": 12, ""carbs"": 0, ""calories"": 210, ""proteins"": 23}"
+216,99,Stuffed Mushrooms,4,"{""fats"": 7, ""carbs"": 1, ""calories"": 100, ""proteins"": 7}"
+217,99,Pop Tart,1,"{""fats"": 9, ""carbs"": 74, ""calories"": 390, ""proteins"": 3}"
+218,100,Rice,3,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+219,100,Spicy Garlic,2,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+220,100,Rice Krispie,2,"{""fats"": 2, ""carbs"": 17, ""calories"": 90, ""proteins"": 0}"
+221,100,Grilled Chicken,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 110, ""proteins"": 18}"
+222,101,Cereal Bar,1,"{""fats"": 3, ""carbs"": 24, ""calories"": 130, ""proteins"": 1}"
+223,101,Eggs,3,"{""fats"": 5, ""carbs"": 0, ""calories"": 70, ""proteins"": 6}"
+224,101,Pork Bacon,4,"{""fats"": 7, ""carbs"": 0, ""calories"": 90, ""proteins"": 7}"
+225,101,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+226,102,Hot Dog,2,"{""fats"": 12, ""carbs"": 1, ""calories"": 140, ""proteins"": 5}"
+227,102,Hot Dog Bun,2,"{""fats"": 1, ""carbs"": 23, ""calories"": 130, ""proteins"": 4}"
+228,102,Chips 1oz,1,"{""fats"": 10, ""carbs"": 15, ""calories"": 160, ""proteins"": 2}"
+229,103,Pizza Slice,2,"{""fats"": 10, ""carbs"": 42, ""calories"": 330, ""proteins"": 19}"
+230,103,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+231,104,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+232,105,Chewy Bar,2,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+233,105,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+234,105,Oatmeal,3,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+235,106,Ice Cream Sandwich,2,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+236,106,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+237,106,Gatorade Powder,2,"{""fats"": 0, ""carbs"": 22, ""calories"": 80, ""proteins"": 0}"
+238,107,Pork Chop,3,"{""fats"": 12, ""carbs"": 0, ""calories"": 210, ""proteins"": 23}"
+239,107,Stuffed Mushrooms,3,"{""fats"": 7, ""carbs"": 1, ""calories"": 100, ""proteins"": 7}"
+240,107,Pop Tart,1,"{""fats"": 9, ""carbs"": 74, ""calories"": 390, ""proteins"": 3}"
+241,108,Tortilla,1,"{""fats"": 4, ""carbs"": 35, ""calories"": 210, ""proteins"": 6}"
+242,108,Grilled Chicken,1,"{""fats"": 2, ""carbs"": 3, ""calories"": 110, ""proteins"": 18}"
+243,109,Eggs,3,"{""fats"": 5, ""carbs"": 0, ""calories"": 70, ""proteins"": 6}"
+244,109,Pork Bacon,4,"{""fats"": 7, ""carbs"": 0, ""calories"": 90, ""proteins"": 7}"
+245,109,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+246,110,LG Baja Blast,1,"{""fats"": 0, ""carbs"": 111, ""calories"": 420, ""proteins"": 0}"
+247,110,Gordita Crunch,1,"{""fats"": 28, ""carbs"": 41, ""calories"": 490, ""proteins"": 20}"
+248,111,Ice Cream Sandwich,1,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+249,111,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+250,111,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+251,112,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+252,113,Chewy Bar,2,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+253,113,Oatmeal,3,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+254,113,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+255,114,Ice Cream,3,"{""fats"": 9, ""carbs"": 23, ""calories"": 180, ""proteins"": 3}"
+256,114,Gatorade Powder,2,"{""fats"": 0, ""carbs"": 22, ""calories"": 80, ""proteins"": 0}"
+257,114,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+258,115,Potato Salad,2,"{""fats"": 13, ""carbs"": 25, ""calories"": 230, ""proteins"": 5}"
+259,115,Grilled Chicken,1,"{""fats"": 2, ""carbs"": 3, ""calories"": 110, ""proteins"": 18}"
+260,115,Tortilla,1,"{""fats"": 4, ""carbs"": 35, ""calories"": 210, ""proteins"": 6}"
+261,116,Rice,2,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+262,116,Spicy Garlic,2,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+263,116,Fruit Snacks,2,"{""fats"": 0, ""carbs"": 17, ""calories"": 70, ""proteins"": 1}"
+264,116,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+265,116,Pop Tart,1,"{""fats"": 9, ""carbs"": 74, ""calories"": 390, ""proteins"": 3}"
+266,117,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+267,117,Sausage Links,2,"{""fats"": 13, ""carbs"": 2, ""calories"": 170, ""proteins"": 10}"
+268,117,Eggs,2,"{""fats"": 5, ""carbs"": 0, ""calories"": 70, ""proteins"": 6}"
+269,118,Dinner Roll,2,"{""fats"": 0, ""carbs"": 50, ""calories"": 200, ""proteins"": 0}"
+270,118,Ceaser Salad,1,"{""fats"": 39, ""carbs"": 11, ""calories"": 420, ""proteins"": 8}"
+271,118,Loaded Mashed Potatoes,1,"{""fats"": 55, ""carbs"": 39, ""calories"": 370, ""proteins"": 16}"
+272,118,Half Slab Ribs,1,"{""fats"": 63, ""carbs"": 9, ""calories"": 900, ""proteins"": 72}"
+273,119,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+274,120,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+275,121,Chewy Bar,2,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+276,121,Oatmeal,3,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+277,121,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+278,122,Ice Cream Sandwich,2,"{""fats"": 5, ""carbs"": 26, ""calories"": 160, ""proteins"": 2}"
+279,122,Gatorade Powder,2,"{""fats"": 0, ""carbs"": 22, ""calories"": 80, ""proteins"": 0}"
+280,122,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+281,123,Ground Chuck 4oz,1,"{""fats"": 20, ""carbs"": 0, ""calories"": 308, ""proteins"": 31}"
+282,123,Cooked Pasta 140g,2,"{""fats"": 1, ""carbs"": 43, ""calories"": 220, ""proteins"": 8}"
+283,124,Rice,2,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+284,124,Grilled Chicken 3oz,1,"{""fats"": 2, ""carbs"": 3, ""calories"": 110, ""proteins"": 18}"
+285,124,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+286,124,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+287,124,Rice Krispie,2,"{""fats"": 2, ""carbs"": 17, ""calories"": 90, ""proteins"": 0}"
+288,125,Pork Bacon,4,"{""fats"": 7, ""carbs"": 0, ""calories"": 90, ""proteins"": 7}"
+289,125,Eggs,2,"{""fats"": 5, ""carbs"": 0, ""calories"": 70, ""proteins"": 6}"
+290,125,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+291,126,Ground Chuck 4oz,1,"{""fats"": 20, ""carbs"": 0, ""calories"": 308, ""proteins"": 31}"
+292,126,Cooked Pasta 140g,1,"{""fats"": 1, ""carbs"": 43, ""calories"": 220, ""proteins"": 8}"
+293,127,Rice,2,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+294,127,Ground Chuck 4oz,1,"{""fats"": 20, ""carbs"": 0, ""calories"": 308, ""proteins"": 31}"
+295,127,Spicy Garlic,1,"{""fats"": 6, ""carbs"": 3, ""calories"": 70, ""proteins"": 1}"
+296,127,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+297,128,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+298,128,Rice Krispie,2,"{""fats"": 2, ""carbs"": 17, ""calories"": 90, ""proteins"": 0}"
+299,129,Chewy Bar,2,"{""fats"": 3, ""carbs"": 18, ""calories"": 100, ""proteins"": 1}"
+300,129,Oatmeal,3,"{""fats"": 3, ""carbs"": 32, ""calories"": 160, ""proteins"": 9}"
+301,129,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+302,130,Ice Cream,3,"{""fats"": 9, ""carbs"": 23, ""calories"": 180, ""proteins"": 3}"
+303,130,Gatorade Powder,2,"{""fats"": 0, ""carbs"": 22, ""calories"": 80, ""proteins"": 0}"
+304,130,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+305,131,Cooked Pasta 140g,2,"{""fats"": 1, ""carbs"": 43, ""calories"": 220, ""proteins"": 8}"
+306,131,Ground Chuck 4oz,1,"{""fats"": 20, ""carbs"": 0, ""calories"": 308, ""proteins"": 31}"
+307,132,Steak Ques.,1,"{""fats"": 27, ""carbs"": 42, ""calories"": 520, ""proteins"": 26}"
+308,132,LG Baja Blast,1,"{""fats"": 0, ""carbs"": 111, ""calories"": 420, ""proteins"": 0}"
+309,132,Potato Salad,1,"{""fats"": 13, ""carbs"": 25, ""calories"": 230, ""proteins"": 5}"
+310,132,Hot Dog,1,"{""fats"": 12, ""carbs"": 1, ""calories"": 140, ""proteins"": 5}"
+311,132,Hot Dog Bun,1,"{""fats"": 1, ""carbs"": 23, ""calories"": 130, ""proteins"": 4}"
+312,133,Pork Bacon,2,"{""fats"": 7, ""carbs"": 0, ""calories"": 90, ""proteins"": 7}"
+313,133,Eggs,3,"{""fats"": 5, ""carbs"": 0, ""calories"": 70, ""proteins"": 6}"
+314,133,Ramen,1,"{""fats"": 14, ""carbs"": 54, ""calories"": 370, ""proteins"": 8}"
+315,134,Cooked Pasta 140g,1,"{""fats"": 1, ""carbs"": 43, ""calories"": 220, ""proteins"": 8}"
+316,134,Ground Chuck 4oz,1,"{""fats"": 20, ""carbs"": 0, ""calories"": 308, ""proteins"": 31}"
+317,135,Grilled Chicken 3oz,1,"{""fats"": 2, ""carbs"": 3, ""calories"": 110, ""proteins"": 18}"
+318,135,Rice,2,"{""fats"": 1, ""carbs"": 45, ""calories"": 206, ""proteins"": 4}"
+319,136,Pop Tart,1,"{""fats"": 9, ""carbs"": 74, ""calories"": 390, ""proteins"": 3}"
+320,136,Protein Powder,4,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+321,143,Steak Ques.,1,"{""fats"": 27, ""carbs"": 42, ""calories"": 520, ""proteins"": 26}"
+322,143,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+323,144,Protein Powder,2,"{""fats"": 2, ""carbs"": 3, ""calories"": 120, ""proteins"": 24}"
+324,145,Pork Bacon,4,"{""fats"": 7, ""carbs"": 0, ""calories"": 90, ""proteins"": 7}"
+325,145,Eggs,2,"{""fats"": 5, ""carbs"": 0, ""calories"": 70, ""proteins"": 6}"
+326,145,Dinner Roll,2,"{""fats"": 0, ""carbs"": 50, ""calories"": 200, ""proteins"": 0}"
