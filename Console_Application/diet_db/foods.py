@@ -27,7 +27,7 @@ class FoodsTable:
         """Method to show the foods table"""
 
         print()
-        print(f"Latest {self.limit} entries:")
+        print(f"{self.limit} latest food entries:")
         print("*" * 93)
         print("* {:<3} | {:<10} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} *".format(
             'ID', 'Date', 'Meal', 'Food', 'S', 'Carb', 'Fats', 'Prot', 'Cals'
@@ -151,7 +151,7 @@ class Foods:
         cursor.execute(query, new_food)
         connection.commit()
         cursor.close()
-        print("Food inserted to database")
+        print(f"{self.food_name} inserted to database")
 
     def add_food_to_food_list_master(self, connection):
         cursor = connection.cursor(buffered=True)
@@ -163,4 +163,4 @@ class Foods:
         cursor.execute(query, new_food_master_entry)
         connection.commit()
         cursor.close()
-        print("Food inserted to database")
+        print(f"{self.food_name} inserted to database")
