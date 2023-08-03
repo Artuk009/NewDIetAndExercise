@@ -5,8 +5,8 @@ class ConnectionCredentials:
 
     """Class to get the credentials for the database"""
 
-    sql_username = 'generic_user'
-    sql_password = 'generic_password'
+    sql_username = 'diet_user'
+    sql_password = 'diet_user'
 
     def __init__(self):
         self.username = ConnectionCredentials.sql_username
@@ -23,17 +23,17 @@ class Connection:
 
     """Class to create a connection to the database"""
 
-    def __init__(self, username, password):
-        self.connection = Connection.connect(self, username, password)
+    def __init__(self, host, username, password):
+        self.connection = Connection.connect(self, host, username, password)
 
     def get_connection(self):
         return self.connection
 
-    def connect(self, username, password):
+    def connect(self, host, username, password):
 
         """Function to create a connection to the database"""
 
-        connection = conn.connect(host="localhost", user=username, password=password, database="diet")
+        connection = conn.connect(host=host, user=username, password=password, database="diet")
         print()
         print("-------------Connected----------------")
         return connection
