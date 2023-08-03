@@ -20,7 +20,7 @@ unittest module.
 * Tools: MySQL Connector, PyTest, and Unittest
 
 ### Diet Analysis
-* <a href="https://github.com/Artuk009/NewDIetAndExercise/blob/90755b9eeae766faf609a628954ccc2c93134e78/Diet_Analysis/diet_v5(Latest).ipynb">Diet Notebook</a> :
+* <a href="https://github.com/Artuk009/NewDIetAndExercise/blob/4d44f4d5e933581bf5e5c762a788e415a2d0ccd0/Diet_Analysis/diet_v6(Latest).ipynb">Diet Notebook</a> :
 This notebook contains the code for the diet analysis. It is the latest
 working version of the diet analysis code. The current features include
 a MySQL database connection with a normalized database structure, the ability
