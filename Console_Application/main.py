@@ -15,14 +15,16 @@ def main():
 
     # Get credentials for database
     credentials = ConnectionCredentials()
+    host = input("Input AWS RDS host: ")
 
     # Chose an option to execute
     while True:
 
         # Get connection to the database
         connection = Connection(
+            host,
             credentials.get_username(),
-            credentials.get_password()
+            credentials.get_password(),
         ).get_connection()
 
         # Get the latest date and date id
@@ -75,7 +77,10 @@ def main():
                 entry_meal_id = GetMealID(meal, meals_table.meals_table).get_meal_id()
                 entry_name = input("What food would you like to add? ")
 
-                if entry_name not in FoodMasterList(connection).get_food_master_list():
+                # Check if food is in master list
+                food_master_list = FoodMasterList(connection)
+                food_master_list.get_food_master_list()
+                if entry_name not in food_master_list.get_names():
                     print("That food is not in the master list. Please add it to the master list.")
                     continue
 

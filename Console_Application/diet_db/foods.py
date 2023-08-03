@@ -60,6 +60,12 @@ class FoodMasterList:
         cursor.close()
         return self.food_master_list
 
+    def get_names(self):
+        names = []
+        for food in self.food_master_list:
+            names.append(food[1])
+        return names
+
 
 class GetNutritionInfo:
 
@@ -117,17 +123,19 @@ class Foods:
 
     """Class to create and store food entries in the database"""
 
-    def __init__(self, food_id, meal_id, food_name, servings, nutrition_info):
-        self.food_id = food_id
-        self.meal_id = meal_id
-        self.food_name = food_name
-        self.servings = servings
-        self.nutrition_info = nutrition_info
-
-    def __init__(self, food_id, food_name, nutrition_info):
-        self.food_id = food_id
-        self.food_name = food_name
-        self.nutrition_info = nutrition_info
+    def __init__(self, *column_headers):
+        if len(column_headers) == 5:
+            self.food_id = column_headers[0]
+            self.meal_id = column_headers[1]
+            self.food_name = column_headers[2]
+            self.servings = column_headers[3]
+            self.nutrition_info = column_headers[4]
+        elif len(column_headers) == 3:
+            self.food_id = column_headers[0]
+            self.food_name = column_headers[2]
+            self.nutrition_info = column_headers[4]
+        else:
+            raise ValueError("Incorrect number of arguments")
 
     def __str__(self):
         return f"{self.food_id} - {self.meal_id} - {self.food_name} - {self.nutrition_info}"
