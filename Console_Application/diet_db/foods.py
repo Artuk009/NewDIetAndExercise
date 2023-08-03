@@ -7,11 +7,12 @@ class FoodsTable:
         self.limit = 5
         self.foods_table = []
 
-    def get_foods_table(self, connection, limit):
+    def get_foods_table(self, limit):
 
         """Method to get the latest food entries from the database"""
 
-        cursor = connection.cursor(buffered=True)
+        self.limit = limit
+        cursor = self.connection.cursor(buffered=True)
         cursor.callproc("GetFoodsByMealAndDateFromFoods")
         results = next(cursor.stored_results())
         dataset = results.fetchmany(limit)
@@ -26,7 +27,7 @@ class FoodsTable:
         """Method to show the foods table"""
 
         print()
-        print("Latest 5 entries:")
+        print(f"Latest {self.limit} entries:")
         print("*" * 93)
         print("* {:<3} | {:<10} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} *".format(
             'ID', 'Date', 'Meal', 'Food', 'S', 'Carb', 'Fats', 'Prot', 'Cals'

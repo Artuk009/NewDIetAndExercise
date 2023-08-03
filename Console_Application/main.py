@@ -2,13 +2,13 @@ from diet_db.meals import MealsTable, SetMeal, Meals, GetMealID
 from diet_db.dates import\
     Dates, InsertDate, DatabaseDate, DatabaseDateID, SetNewDate, SetNewDateID, DatesTable
 from diet_db.foods import FoodsTable, FoodCount, Foods, FoodMasterList, GetNutritionInfo
+from diet_db.body_measurements import BodyMeasurementsTable
 from connection.client_server_connection import ConnectionCredentials, Connection
 
 import json as j
 
 # TODO: Add error handling for invalid input and db check
 # TODO: Continue updating tests.
-# TODO: Switch to AWS RDS database.
 
 
 def main():
@@ -45,6 +45,8 @@ def main():
                        "[3] Update the Date \n"
                        "[4] Log a New Food \n"
                        "[5] Add a New Food to the Food Master List \n"
+                       "[6] View Latest Body Measurements \n"
+                       "[7] Log New Body Measurements \n"
                        "[9] Exit \n")
 
         dates_table = DatesTable(connection)
@@ -52,11 +54,12 @@ def main():
         meals_table = MealsTable(connection)
         meals_table.get_meals_table(current_date.date_id)
         foods_table = FoodsTable(connection)
+        body_measurements_table = BodyMeasurementsTable(connection)
 
         match choice:
             case "1":
                 entry_number = input("Enter the number of entries to view: ")
-                foods_table.get_foods_table(connection, int(entry_number))
+                foods_table.get_foods_table(int(entry_number))
                 foods_table.show_foods_table()
 
             case "2":
@@ -101,6 +104,14 @@ def main():
                 )
                 entry = Foods(entry_id, entry_name, entry_nutrition_info)
                 entry.add_food_to_food_list_master(connection)
+
+            case "6":
+                entry_number = input("Enter the number of entries to view: ")
+                body_measurements_table.get_body_measurements_table(int(entry_number))
+                body_measurements_table.show_body_measurements_table()
+
+            case "7":
+                pass
 
             case "9":
                 print("Exiting...")
