@@ -41,8 +41,6 @@ tables are easily maintainable and scalable. I also included a trigger that auto
 date is logged because it wouldn't make sense not to have them in any scenario.
 * Tools: MySQL and DataGrip Workbench (PyCharm Plugin)
 
-![DB UML](https://github.com/Artuk009/NewDIetAndExercise/blob/6ca0ffc0eec12b5148a636b87d2bcb89b65fda55/Visualizations/DB_UML.png)
-<img src=https://github.com/Artuk009/NewDIetAndExercise/blob/6ca0ffc0eec12b5148a636b87d2bcb89b65fda55/Visualizations/DB_UML.png" width="500" height="500"/>
 /home/ubuntu/Pictures/Screenshots/DB_UML.png
 
 ### Exercise Analysis (Suspended for Now)
