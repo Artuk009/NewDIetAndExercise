@@ -137,7 +137,7 @@ class InsertDate:
         #     raise Exception("Date already entered")
 
         query = '''
-        INSERT INTO dates_console_test (id, date) 
+        INSERT INTO dates_2023 (id, date) 
         VALUES (%s, %s)'''
         params = (new_date[0], new_date[1])
         cursor.execute(query, params)
