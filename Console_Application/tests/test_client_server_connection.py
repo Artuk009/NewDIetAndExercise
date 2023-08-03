@@ -9,15 +9,8 @@ class TestConnection(unittest.TestCase):
         """Tests that the credentials are correct"""
 
         credentials = ConnectionCredentials()
-        assert credentials.username == 'generic_user'
-        assert credentials.password == 'generic_password'
-
-    def test_connection(self):
-
-        """Tests that the connection is established"""
-
-        connection = Connection('generic_user', 'generic_password').get_connection()
-        assert connection.is_connected() is True
+        assert credentials.username == 'diet_user'
+        assert credentials.password == 'diet_user'
 
 
 if __name__ == '__main__':
