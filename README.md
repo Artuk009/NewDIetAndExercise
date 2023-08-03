@@ -40,6 +40,7 @@ associated with the console application. I took a highly normalized approach to 
 tables are easily maintainable and scalable. I also included a trigger that automatically populates meal entries when a
 date is logged because it wouldn't make sense not to have them in any scenario.
 * Tools: MySQL and DataGrip Workbench (PyCharm Plugin)
+* Database UML:
 ![DB UML](https://github.com/Artuk009/NewDIetAndExercise/blob/d70365d5a6652dbf2906c8a765f948477cb86aef/Visualizations/DB_UML.png)
 
 
