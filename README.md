@@ -28,7 +28,9 @@ This notebook contains the code for the diet analysis. It is the latest
 working version of the diet analysis code. The current features include
 a MySQL database connection with a normalized database structure, the ability
 to update entries within the database, and relevant calculations and 
-visualizations for analysis. 
+visualizations for analysis.
+* Important visualizations from analysis:<br>
+  ![DataViz](https://github.com/Artuk009/NewDIetAndExercise/blob/8f86dd8e32bf058a2a93f961104e24c57514b632/Visualizations/pieandbar.png)
 * <a href="https://github.com/Artuk009/NewDIetAndExercise/blob/90755b9eeae766faf609a628954ccc2c93134e78/Diet_Analysis/body_measurements_v2.ipynb">Body Measurements Notebook</a> :
 This notebook has the code for reading and updating data from the body measurement table in the database. Then 
 summary statistics and visualizations are created to analyze the data and determine what actions to take in terms
