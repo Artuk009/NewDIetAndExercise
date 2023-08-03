@@ -18,6 +18,9 @@ of converting the Pandas layout to a MySQL connector based application which sho
 I have been implementing unit testing as I go along to ensure that the application is working as intended with the 
 unittest module.
 * Tools: MySQL Connector, PyTest, and Unittest
+* Sample body measurement entry output:<br>
+  ![Output #1](https://github.com/Artuk009/NewDIetAndExercise/blob/c7e5abd04e23f7c1e9aea7605bb5e33ce0a7ad9a/Visualizations/output1.png)
+  ![Output #2](https://github.com/Artuk009/NewDIetAndExercise/blob/c7e5abd04e23f7c1e9aea7605bb5e33ce0a7ad9a/Visualizations/output2.png)
 
 ### Diet Analysis
 * <a href="https://github.com/Artuk009/NewDIetAndExercise/blob/4d44f4d5e933581bf5e5c762a788e415a2d0ccd0/Diet_Analysis/diet_v6(Latest).ipynb">Diet Notebook</a> :
