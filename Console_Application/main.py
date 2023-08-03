@@ -7,9 +7,9 @@ from connection.client_server_connection import ConnectionCredentials, Connectio
 
 import json as j
 
-
 # TODO: Add error handling for invalid input and db check
 # TODO: Continue updating tests.
+# TODO: Abstract the application and interface code to their own class files
 
 
 def main():
