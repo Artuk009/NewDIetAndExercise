@@ -1,18 +1,18 @@
 from diet_db.meals import MealsTable, SetMeal, Meals, GetMealID
-from diet_db.dates import\
+from diet_db.dates import \
     Dates, InsertDate, DatabaseDate, DatabaseDateID, SetNewDate, SetNewDateID, DatesTable
 from diet_db.foods import FoodsTable, FoodCount, Foods, FoodMasterList, GetNutritionInfo
-from diet_db.body_measurements import BodyMeasurementsTable
+from diet_db.body_measurements import BodyMeasurementsTable, MeasurementCount, BodyMeasurements
 from connection.client_server_connection import ConnectionCredentials, Connection
 
 import json as j
+
 
 # TODO: Add error handling for invalid input and db check
 # TODO: Continue updating tests.
 
 
 def main():
-
     # Get credentials for database
     credentials = ConnectionCredentials()
     host = input("Input AWS RDS host: ")
@@ -99,9 +99,11 @@ def main():
                 carbs = int(input("How many g of carbs? "))
                 calories = int(input("How many calories? "))
                 protein = int(input("How many g of protein? "))
+
                 entry_nutrition_info = j.dumps(
                     {"fats": fats, "carbs": carbs, "calories": calories, "protein": protein}
                 )
+
                 entry = Foods(entry_id, entry_name, entry_nutrition_info)
                 entry.add_food_to_food_list_master(connection)
 
@@ -111,7 +113,36 @@ def main():
                 body_measurements_table.show_body_measurements_table()
 
             case "7":
-                pass
+                entry_id = MeasurementCount(connection).get_measurement_count() + 1
+                date_id = current_date.date_id
+                bf_percentage = float(input("What is your body fat percentage? "))
+                fat_mass = float(input("What is your fat mass? "))
+                body_weight = float(input("What is your body weight? "))
+                muscle_mass = float(input("What is your muscle mass? "))
+
+                # Determine workout type.
+                type_choice = input("Enter Workout Type: [1] CHST, [2] BACK, [3] SHDR, [4] LEGS, [5] REST")
+                if type_choice == '1':
+                    workout_type = 'CHST'
+                elif type_choice == '2':
+                    workout_type = 'BACK'
+                elif type_choice == '3':
+                    workout_type = 'SHDR'
+                elif type_choice == '4':
+                    workout_type = 'LEGS'
+                elif type_choice == '5':
+                    workout_type = 'REST'
+                else:
+                    print("Invalid Choice")
+                    raise Exception("Invalid Choice")
+
+                measurements = j.dumps(
+                    {"body_fat": bf_percentage, "fat_mass": fat_mass, "body_weight": body_weight,
+                     "muscle_mass": muscle_mass, "workout_type": workout_type}
+                )
+
+                entry = BodyMeasurements(connection, entry_id, date_id, measurements)
+                entry.add_measurements()
 
             case "9":
                 print("Exiting...")
