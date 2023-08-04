@@ -101,7 +101,7 @@ def main():
                 protein = int(input("How many g of protein? "))
 
                 entry_nutrition_info = j.dumps(
-                    {"fats": fats, "carbs": carbs, "calories": calories, "protein": protein}
+                    {"fats": fats, "carbs": carbs, "calories": calories, "proteins": protein}
                 )
 
                 entry = Foods(entry_id, entry_name, entry_nutrition_info)
