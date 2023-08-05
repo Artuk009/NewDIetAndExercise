@@ -38,7 +38,7 @@ of adjusting the diet routine. There is a log entry at the end for tracking expe
 observed results.
 * Tools: PyMySQL, Pandas, Seaborn, and SQLAlchemy.
 * Visualization of the trends of important measurement variables:<br>
-  ![Trends](https://github.com/Artuk009/NewDIetAndExercise/blob/43ee39825c1726b3edc6466dac459530a9ecd3b8/Visualizations/trends.png) 
+  ![Trends](https://github.com/Artuk009/NewDIetAndExercise/blob/2b10ca841579d1da443ea679751901cdaa0f220e/Visualizations/trends.png) 
 
 ### Queries
 * <a href="https://github.com/Artuk009/NewDIetAndExercise/blob/90755b9eeae766faf609a628954ccc2c93134e78/Queries/aws_rds_MYSQL.sql">MySQL Queries</a> :
