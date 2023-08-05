@@ -81,7 +81,7 @@ class Application:
 
                 case "5":
                     entry_id = FoodCount(connection).get_food_list_master_count() + 1
-                    entry_name = input("What food would you like to add to teh master list? ")
+                    entry_name = input("What food would you like to add to the master list? ")
                     fats = int(input("How many g of fats? "))
                     carbs = int(input("How many g of carbs? "))
                     calories = int(input("How many calories? "))
