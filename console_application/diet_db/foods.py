@@ -28,15 +28,15 @@ class FoodsTable:
 
         print()
         print(f"{self.limit} latest food entries:")
-        print("*" * 93)
-        print("* {:<3} | {:<10} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} *".format(
+        print("*" * 103)
+        print("* {:<3} | {:<10} | {:<15} | {:<30} | {} | {:<4} | {:<4} | {:<4} | {:<4} *".format(
             'ID', 'Date', 'Meal', 'Food', 'S', 'Carb', 'Fats', 'Prot', 'Cals'
         ))
-        print("*" * 93)
+        print("*" * 103)
         for data in self.foods_table:
-            print("* {:<3} | {} | {:<15} | {:<20} | {} | {:<4} | {:<4} | {:<4} | {:<4} *".format(
+            print("* {:<3} | {} | {:<15} | {:<30} | {} | {:<4} | {:<4} | {:<4} | {:<4} *".format(
                 data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8]))
-        print("*" * 93)
+        print("*" * 103)
         print()
 
 
@@ -133,8 +133,8 @@ class Foods:
             self.nutrition_info = column_headers[4]
         elif len(column_headers) == 3:
             self.food_id = column_headers[0]
-            self.food_name = column_headers[2]
-            self.nutrition_info = column_headers[4]
+            self.food_name = column_headers[1]
+            self.nutrition_info = column_headers[2]
         else:
             raise ValueError("Incorrect number of arguments")
 
